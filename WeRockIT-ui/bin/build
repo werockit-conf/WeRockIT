@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+TAG="-t werockitconf/ui:dev"
+
+if [[ "$1" == "-t" ]]; then
+  TAG="-t $2"
+fi
+
+docker build $TAG .

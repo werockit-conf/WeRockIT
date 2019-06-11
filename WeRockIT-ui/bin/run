@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+TAG="dev"
+
+if [[ $1 != "" ]]; then
+  TAG="$1"
+fi
+
+echo "  Starting app at:"
+echo "  http://localhost:8080/"
+
+docker run -it -p 8080:80 --rm --name werockitconf-ui werockitconf/ui:$TAG
