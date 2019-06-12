@@ -2,9 +2,18 @@
   <div class="about">
     <div>
       Happening March XX-XX 2020!
-      A premier event. WeRockIT Conf is an annual two-day conference that features all disciplines of technology and shows how they all can interconnect. We'll highlight a wide range of speakers to educate and inspire our guests. Our mission is to showcase and grow diverse voices in technology.
-      This conference is being organized by a group of passionate developers who are dedicated to enriching the Huntsville, AL tech community.. WeRockIT Conf will include a mix of panel discussions, keynotes, speakers, and hands-on workshops.
-      This year the topics will focus on: Cloud Computing, Big Data, Web Development, CyberSecurity, and Embedded Systems. So, come join us on our mission!</h1>
+    </div>
+    <div>
+      A premier event. WeRockIT Conf is an annual two-day conference that
+      features all disciplines of technology and shows how they all can
+      interconnect. We'll highlight a wide range of speakers to educate and
+      inspire our guests. Our mission is to showcase and grow diverse voices in
+      technology. This conference is being organized by a group of passionate
+      developers who are dedicated to enriching the Huntsville, AL tech
+      community.. WeRockIT Conf will include a mix of panel discussions,
+      keynotes, speakers, and hands-on workshops. This year the topics will
+      focus on: Cloud Computing, Big Data, Web Development, CyberSecurity, and
+      Embedded Systems. So, come join us on our mission!
     </div>
   </div>
 </template>
