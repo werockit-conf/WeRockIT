@@ -50,4 +50,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     Note: This will also install node.js as a yarn dependency
 
     Note: Restart your computer for VSCode terminal to have yarn in the path to use within VSCode
-
