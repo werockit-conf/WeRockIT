@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import WorkInProgress from "./views/WorkInProgress.vue";
 import Home from "./views/Home.vue";
+import Speakers from "./views/Speakers.vue";
 
 Vue.use(Router);
 
@@ -18,6 +19,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/speakers",
+      name: "speakers",
+      component: Speakers
     },
     {
       path: "/about",
