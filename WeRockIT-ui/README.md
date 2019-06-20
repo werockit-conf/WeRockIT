@@ -43,7 +43,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
     Note: Opted to use powershell since it also directly integrates into VSCode
 
-    Note: If does not work as anticipated right after installation, restart the the machine
+    Note: If does not work as anticipated right after installation, restart the machine
 
 2. Install Yarn, a project dependency manager, using the instructions from `https://yarnpkg.com/lang/en/docs/install/#windows-stable`
 
