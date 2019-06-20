@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div class="container mx-auto">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/wip">Speakers</router-link> |
+      <router-link to="/speakers">Speakers</router-link> |
       <router-link to="/wip">Schedule</router-link> |
       <router-link to="/wip">Sponsors</router-link> |
       <router-link to="/wip">Venue/Travel</router-link> |
