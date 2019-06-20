@@ -3,6 +3,7 @@ import Router from "vue-router";
 import WorkInProgress from "./views/WorkInProgress.vue";
 import Home from "./views/Home.vue";
 import Speakers from "./views/Speakers.vue";
+import Venue from "./views/Venue.vue";
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: "/speakers",
       name: "speakers",
       component: Speakers
+    },
+    {
+      path: "/venue",
+      name: "venue",
+      component: Venue
     },
     {
       path: "/about",

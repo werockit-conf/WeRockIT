@@ -6,7 +6,7 @@
       <router-link to="/speakers">Speakers</router-link> |
       <router-link to="/wip">Schedule</router-link> |
       <router-link to="/wip">Sponsors</router-link> |
-      <router-link to="/wip">Venue/Travel</router-link> |
+      <router-link to="/venue">Venue/Travel</router-link> |
       <router-link to="/wip">Tickets</router-link>
     </div>
     <router-view />

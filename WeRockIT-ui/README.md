@@ -37,3 +37,19 @@ yarn run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Setup on Windows
+1. Install Chocolatey, a package manager from Windows, using the following directions from `https://chocolatey.org/install`
+
+    Note: Opted to use powershell since it also directly integrates into VSCode
+
+    Note: If does not work as anticipated right after installation, restart the th e machine
+
+2. Install Yarn, a project dependency manager, using the instructions from `https://yarnpkg.com/lang/en/docs/install/#windows-stable`
+
+    Execute ```choco install yarn``` within a powershell terminal
+
+    Note: This will also install node.js as a yarn dependency
+
+    Note: Restart your computer for VSCode terminal to have yarn in the path to use within VSCode
+
