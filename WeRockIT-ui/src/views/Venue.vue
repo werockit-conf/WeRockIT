@@ -9,8 +9,8 @@
         <h1>ADTRAN Mark C. Smith Conference Center</h1>
         <p>ADTRAN East Tower, 965 Explorer Blvd NW, Huntsville, AL 35806</p>
         <p>
-          Located in the heart ofCummings Research Park, and I-565 exit 14,
-          the ADTRAN Mark C. Smith Conference Center resides in ADTRAN's East Tower.
+          Located in the heart ofCummings Research Park, and I-565 exit 14, the ADTRAN Mark C. Smith Conference Center
+          resides in ADTRAN's East Tower.
         </p>
       </div>
       <div class="md:flex-shrink-0">
@@ -28,41 +28,38 @@
       <h1>Suggested Hotels</h1>
       <ul>
         <li>
-          <a
-            href="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg"
-            target="Westin"
-          >The Westin at Bridge Street</a>
-          <br>6800 Governors West
-          <br>Huntsville, AL 35806
+          <a href="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg" target="Westin">
+            The Westin at Bridge Street
+          </a>
           <br />
+          6800 Governors West<br />
+          Huntsville, AL 35806<br />
         </li>
         <li>
-          <a href="http://www.elementhuntsville.com/" target="Element">The Element at Bridge Street</a>
-          <br>6810 Governors West
-          <br>Huntsville, AL 35806
-          <br />
+          <a href="http://www.elementhuntsville.com/" target="Element">The Element at Bridge Street</a><br />
+          6810 Governors West<br />
+          Huntsville, AL 35806<br />
         </li>
         <li>
-          <a
-            href="https://www.ihg.com/holidayinn/hotels/us/en/huntsville/hsvrp/hoteldetail"
-            target="Holiday Inn"
-          >Holiday Inn</a>
-          <br>5903 University Drive
-          <br>Huntsville, AL 35806
+          <a href="https://www.ihg.com/holidayinn/hotels/us/en/huntsville/hsvrp/hoteldetail" target="Holiday Inn">
+            Holiday Inn
+          </a>
           <br />
+          5903 University Drive <br />
+          Huntsville, AL 35806 <br />
         </li>
       </ul>
     </div>
     <div>
       <h2>Venue Parking</h2>
       <p>
-        Parking for the conference is free. It is recommended to park on the south side of the
-        ADTRAN East Tower to have direct access to the Mark C. Smith Conference Center entrance.
+        Parking for the conference is free. It is recommended to park on the south side of the ADTRAN East Tower to have
+        direct access to the Mark C. Smith Conference Center entrance.
       </p>
       <h2>Handicap Accessability</h2>
       <p>
-        A handicap accessilbe entrance is available. Volutneers will be staffed at the entrance
-        in order to help escort handicap attendees.
+        A handicap accessilbe entrance is available. Volutneers will be staffed at the entrance in order to help escort
+        handicap attendees.
       </p>
       <img src="../assets/mark-c-smith-conference-poi.png" />
     </div>
@@ -71,8 +68,8 @@
 
 <script>
 export default {
-  name: "venue"
-};
+  name: 'venue',
+}
 </script>
 
 <style scoped>

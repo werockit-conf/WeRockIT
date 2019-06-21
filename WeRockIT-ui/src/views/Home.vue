@@ -12,18 +12,13 @@
               <h2>Developers Conference</h2>
               <hr />
               <h5>
-                Cloud Computing | Big Data | Web Development | Cybersecurity |
-                Embedded Systems
+                Cloud Computing | Big Data | Web Development | Cybersecurity | Embedded Systems
               </h5>
               <hr />
               <h3>May 3-4, 2019</h3>
               <h3>Huntsville, AL</h3>
               <br />
-              <a
-                href="#mailingList"
-                class="btn btn-outline btn-xl js-scroll-trigger"
-                >Stay in the Loop</a
-              >
+              <a href="#mailingList" class="btn btn-outline btn-xl js-scroll-trigger">Stay in the Loop</a>
             </div>
           </div>
         </div>
@@ -37,6 +32,6 @@
 // import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: "home"
-};
+  name: 'home',
+}
 </script>

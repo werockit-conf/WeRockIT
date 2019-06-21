@@ -1,44 +1,43 @@
-import Vue from "vue";
-import Router from "vue-router";
-import WorkInProgress from "./views/WorkInProgress.vue";
-import Home from "./views/Home.vue";
-import Speakers from "./views/Speakers.vue";
-import Venue from "./views/Venue.vue";
+import Vue from 'vue'
+import Router from 'vue-router'
+import WorkInProgress from './views/WorkInProgress.vue'
+import Home from './views/Home.vue'
+import Speakers from './views/Speakers.vue'
+import Venue from './views/Venue.vue'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/wip",
-      name: "WorkInProgress",
-      component: WorkInProgress
+      path: '/wip',
+      name: 'WorkInProgress',
+      component: WorkInProgress,
     },
     {
-      path: "/",
-      name: "home",
-      component: Home
+      path: '/',
+      name: 'home',
+      component: Home,
     },
     {
-      path: "/speakers",
-      name: "speakers",
-      component: Speakers
+      path: '/speakers',
+      name: 'speakers',
+      component: Speakers,
     },
     {
-      path: "/venue",
-      name: "venue",
-      component: Venue
+      path: '/venue',
+      name: 'venue',
+      component: Venue,
     },
     {
-      path: "/about",
-      name: "about",
+      path: '/about',
+      name: 'about',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
-    }
-  ]
-});
+      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+    },
+  ],
+})
