@@ -3,8 +3,7 @@
     <div class="text-center">
       <h1>Our Speakers</h1>
       <h3>
-        Our speaker lineup is sure to bring you two action packed days of
-        education and inspiration!
+        Our speaker lineup is sure to bring you two action packed days of education and inspiration!
       </h3>
       <h3>Join us on March XX-XX, 2020</h3>
     </div>
@@ -13,8 +12,8 @@
 
 <script>
 export default {
-  name: "speakers"
-};
+  name: 'speakers',
+}
 </script>
 
 <style scoped>
