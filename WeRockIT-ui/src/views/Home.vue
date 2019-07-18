@@ -1,39 +1,50 @@
 <template>
   <div>
     <NavBar></NavBar>
-    <div class="home">
-      <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-      <header class="masthead masthead-background">
-        <div class="container h-100 text-wri-teal">
-          <div class="row h-100">
-            <div class="col-md-12 my-auto mx-auto">
-              <div class="text-center">
-                <!--<img src="img/WeRockIT_black.png" alt="weRockIT Logo" class="img-responsive img-fluid"/>-->
-                <!--<h1 class="display-1">WeRockIT Conf 2019</h1>-->
-                <h1 class="uppercase">WeRockIT 2020</h1>
-                <h2 class="uppercase">
-                  DevOps | Development | Data Science | IOT
-                </h2>
-                <hr />
-                <h3 class="uppercase">May 3-4 2019</h3>
-                <h3 class="uppercase">Huntsville, AL</h3>
-                <br />
-                <a href="#mailingList" class="">Stay in the Loop</a>
-              </div>
-            </div>
-          </div>
+    <div class="home bg-wri-image pb-24">
+      <div class="mx-auto text-wri-teal text-6xl">
+        <div class="text-center">
+          <h1 class="uppercase">WeRockIT 2020</h1>
+          <h2 class="uppercase text-4xl">DevOps | Development | Data Science | IOT</h2>
+          <h3 class="uppercase">May 3-4 2019</h3>
+          <h3 class="uppercase">Huntsville, AL</h3>
         </div>
-      </header>
+      </div>
+    </div>
+    <div class="container mx-auto bg-wri-blue p-20 text-center">
+      <div class="text-3xl pb-12 text-white">
+        Lorem ipsum dolor sit amet, consectetur adipisc- ing elit. Proin mattis dui convallis molestie plac- erat.
+        Pellentesque tellus ante, volutpat sed plac- erat gravida, ullamcorper eu turpis. Aliquam erat volutpat.
+      </div>
+      <!-- <div class="inline mx-auto p-2 bg-wri-teal rounded-full">Learn more</div> -->
+    </div>
+    <div class="mx-auto bg-white p-20 text-center">
+      <div class="text-6xl text-wri-teal">Tracks</div>
+      <div class="flex flex-wrap justify-center text-wri-teal text-4xl uppercase">
+        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">DEVOPS</div>
+        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">IOT</div>
+        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">Development</div>
+        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">Data Science</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import NavBar from "@/components/NavBar.vue";
+import NavBar from '@/components/NavBar.vue'
 
 export default {
-  name: "home",
-  components: { NavBar }
-};
+  name: 'home',
+  components: {
+    NavBar,
+  },
+}
 </script>
+
+<style scoped>
+.bg-wri-image {
+  background-image: url('../assets/werockit-web-background.jpg');
+  @apply bg-cover bg-scroll;
+}
+</style>
