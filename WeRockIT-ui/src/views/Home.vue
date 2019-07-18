@@ -20,10 +20,10 @@
     <div class="mx-auto bg-white p-20 text-center">
       <div class="text-6xl text-wri-teal">Tracks</div>
       <div class="flex flex-wrap justify-center text-wri-teal text-4xl uppercase">
-        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">DEVOPS</div>
-        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">IOT</div>
-        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">Development</div>
-        <div class="flex-shrink-0 bg-wri-blue h-48 w-1/3 m-6">Data Science</div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6">DEVOPS</div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6">IOT</div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6">Development</div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6">Data Science</div>
       </div>
     </div>
   </div>
