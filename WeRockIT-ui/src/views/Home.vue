@@ -1,7 +1,6 @@
 <template>
   <div>
-    <NavBar></NavBar>
-    <div class="home bg-wri-image pb-24">
+    <div class="home pt-64 bg-wri-image pb-24">
       <div class="mx-auto text-wri-teal text-6xl">
         <div class="text-center">
           <h1 class="uppercase">WeRockIT 2020</h1>
@@ -29,18 +28,6 @@
     </div>
   </div>
 </template>
-
-<script>
-// @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
-
-export default {
-  name: 'home',
-  components: {
-    NavBar,
-  },
-}
-</script>
 
 <style scoped>
 .bg-wri-image {
