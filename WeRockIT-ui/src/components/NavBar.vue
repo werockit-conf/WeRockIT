@@ -9,6 +9,3 @@
     <router-link :to="{ name: 'tickets' }">Tickets</router-link>
   </div>
 </template>
-
-<style scoped>
-</style>
