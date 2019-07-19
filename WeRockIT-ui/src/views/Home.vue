@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="home pt-64 bg-wri-image pb-24">
-      <div class="mx-auto text-wri-teal text-6xl">
+      <div class="mx-auto text-wri-teal text-6xl font-bebas font-thin">
         <div class="text-center">
           <h1 class="uppercase">WeRockIT 2020</h1>
           <h2 class="uppercase text-4xl">DevOps | Development | Data Science | IOT</h2>

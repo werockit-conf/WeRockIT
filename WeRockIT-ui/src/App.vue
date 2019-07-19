@@ -21,6 +21,8 @@ export default {
 @tailwind components;
 @tailwind utilities;
 
+@import './assets/css/fonts.css';
+
 .text-wri-black {
   color: #191716;
 }
