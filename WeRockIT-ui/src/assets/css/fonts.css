@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 @font-face {
   font-family: "Bebas Neue W01 Regular";
   src: url("../fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
@@ -13,4 +15,8 @@
 
 .font-bebas {
   font-family: "Bebas Neue W01 Regular";
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
 }
