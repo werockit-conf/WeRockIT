@@ -20,9 +20,24 @@
     <div class="mx-auto bg-white p-20 text-center">
       <div class="text-6xl text-wri-teal">Tracks</div>
       <div class="flex flex-wrap justify-center text-wri-teal text-4xl uppercase">
-        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">DEVOPS</div>
-        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">IOT</div>
-        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">Development</div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">
+          <div>
+            <div>DEVOPS</div>
+            <div>Cloud, Agile, CI/CD</div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">
+          <div>
+            <div>IOT</div>
+            <div>Embedded, Wearables</div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">
+          <div>
+            <div>Development</div>
+            <div>Web, Backend, UX</div>
+          </div>
+        </div>
         <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">Data Science</div>
       </div>
     </div>
