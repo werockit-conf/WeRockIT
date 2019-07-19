@@ -13,7 +13,8 @@
 
 <style scoped>
 .bg-wri-image {
-  background-image: url("../../assets/werockit-web-background.jpg");
-  @apply bg-cover bg-scroll;
+  background-image: url('../../assets/werockit-web-background.jpg');
+  @apply bg-cover;
+  @apply bg-scroll;
 }
 </style>
