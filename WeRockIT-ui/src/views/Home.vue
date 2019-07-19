@@ -18,27 +18,29 @@
       <!-- <div class="inline mx-auto p-2 bg-wri-teal rounded-full">Learn more</div> -->
     </div>
     <div class="mx-auto bg-white p-20 text-center">
-      <div class="text-6xl text-wri-teal">Tracks</div>
-      <div class="flex flex-wrap justify-center text-wri-teal text-4xl uppercase">
+      <div class="text-6xl font-bebas text-wri-teal">Tracks</div>
+      <div class="flex flex-wrap justify-center text-wri-teal text-5xl uppercase">
         <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">
           <div>
-            <div>DEVOPS</div>
-            <div>Cloud, Agile, CI/CD</div>
+            <div class="font-bebas">DEVOPS</div>
+            <div class="text-base">Cloud, Agile, CI/CD</div>
           </div>
         </div>
         <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">
           <div>
-            <div>IOT</div>
-            <div>Embedded, Wearables</div>
+            <div class="font-bebas">IOT</div>
+            <div class="text-base">Embedded, Wearables</div>
           </div>
         </div>
         <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">
           <div>
-            <div>Development</div>
-            <div>Web, Backend, UX</div>
+            <div class="font-bebas">Development</div>
+            <div class="text-base">Web, Backend, UX</div>
           </div>
         </div>
-        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center">Data Science</div>
+        <div class="flex-shrink-0 bg-wri-dark-blue h-48 w-1/3 m-6 flex justify-center items-center font-bebas">
+          Data Science
+        </div>
       </div>
     </div>
   </div>
