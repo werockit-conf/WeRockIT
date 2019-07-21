@@ -5,7 +5,7 @@
 version: 2
 jobs:
   test:
-    working_directory: ~/WeRockIT/WeRockIT-ui
+    working_directory: ~/WeRockIT
 
     docker:
       # specify the version you desire here
@@ -35,7 +35,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn --cwd WeRockIT-ui test:unit
+      - run: yarn test:unit
 
 workflows:
   version: 2
