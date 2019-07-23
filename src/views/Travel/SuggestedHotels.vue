@@ -3,21 +3,21 @@
     <div class="text-6xl text-wri-dark-blue font-thin text-center">Suggested Hotels</div>
     <div class="flex flex-wrap text-5xl text-white justify-center">
       <div class="bg-wri-dark-blue suggested_hotel_box bg-westin-image">
-          <div class="font-roboto-slab text-lg font-semibold">
-            <a href="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg" target="Westin">
-              The Westin at Bridge Street
-            </a>
-          </div>
-          <p class="font-montserrat text-base p-3">      
-            6800 Governors West<br />
-            Huntsville, AL 35806<br />
-          </p>
+        <div class="font-roboto-slab text-lg font-semibold">
+          <a href="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg" target="Westin">
+            The Westin at Bridge Street
+          </a>
+        </div>
+        <p class="font-montserrat text-base p-3">
+          6800 Governors West<br />
+          Huntsville, AL 35806<br />
+        </p>
       </div>
       <div class="bg-wri-dark-blue suggested_hotel_box bg-element-image">
         <div class="font-roboto-slab text-lg font-semibold">
           <a href="http://www.elementhuntsville.com/" target="Element">The Element at Bridge Street</a>
         </div>
-        <p class="font-montserrat text-base p-3">      
+        <p class="font-montserrat text-base p-3">
           6810 Governors West<br />
           Huntsville, AL 35806<br />
         </p>
@@ -27,8 +27,8 @@
           <a href="https://www.ihg.com/holidayinn/hotels/us/en/huntsville/hsvrp/hoteldetail" target="Holiday Inn">
             Holiday Inn
           </a>
-        </div>  
-        <p class="font-montserrat text-base p-3">      
+        </div>
+        <p class="font-montserrat text-base p-3">
           5903 University Drive <br />
           Huntsville, AL 35806 <br />
         </p>
@@ -65,6 +65,6 @@
   @apply text-center;
   @apply justify-center;
   @apply bg-black;
-  filter: brightness(0.50); 
+  filter: brightness(0.5);
 }
 </style>

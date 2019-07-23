@@ -1,9 +1,9 @@
 <template>
-  <div class="mx-auto bg-white flex">
-    <div class="p-12 md:flex-shrink-0 w-1/2">
+  <div class="bg-white p-6 md:flex md:justify-center">
+    <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
       <img src="../../assets/mark-c-smith-conference-poi.png" />
     </div>
-    <div class="p-12">
+    <div class="md:1-1/2 md:ml-6 md:max-w-xl">
       <h3>Parking</h3>
       <p>
         Parking for the conference is free. It is recommended to park on the south side of the ADTRAN East Tower to have

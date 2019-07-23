@@ -28,12 +28,27 @@ export default {
 </script>
 
 <style>
+h2 {
+  @apply text-6xl;
+  @apply font-thin;
+  @apply text-center;
+}
+
 h3 {
   @apply text-3xl;
 }
 
 p {
-  @apply text-xl;
+  font-family: 'Montserrat', sans-serif;
+  @apply text-sm;
+  @apply font-black;
+  @apply leading-tight;
+  @apply tracking-tight;
 }
 
+iframe,
+object,
+embed {
+  max-width: 100%;
+}
 </style>
