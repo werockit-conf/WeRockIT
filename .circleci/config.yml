@@ -69,10 +69,11 @@ jobs:
       - run: echo "eventually to deploy here"
       # - run: 
       #     name: Firebase Deploy
-      #     command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
+      #     command: yarn firebase deploy --token "$FIREBASE_TOKEN"
 
 workflows:
   version: 2
   test:
     jobs:
       - test
+      # - deploy
