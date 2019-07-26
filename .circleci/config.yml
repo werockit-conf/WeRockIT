@@ -76,4 +76,4 @@ workflows:
   test:
     jobs:
       - test
-      # - deploy
+      - deploy
