@@ -1,9 +1,32 @@
 <template>
-  <div class="container mx-auto bg-wri-blue p-20 text-center">
-    <div class="text-3xl pb-12 text-white">
-      Lorem ipsum dolor sit amet, consectetur adipisc- ing elit. Proin mattis dui convallis molestie plac- erat.
-      Pellentesque tellus ante, volutpat sed plac- erat gravida, ullamcorper eu turpis. Aliquam erat volutpat.
+  <Tile title bgcolor="bg-wri-blue">
+    <!-- <div class="container mx-auto bg-wri-blue p-20 text-center"> -->
+    <div class="mx-auto text-center text-3xl pb-12 text-white">
+      <div>
+        A premier event. WeRockIT Conf is an annual two-day conference that features all disciplines of technology and
+        shows how they all can interconnect. We'll highlight a wide range of speakers to educate and inspire our guests.
+        Our mission is to showcase and grow diverse voices in technology.
+      </div>
+      <br />
+      <div>
+        This conference is being organized by a group of passionate developers who are dedicated to enriching the
+        Huntsville, AL tech community. WeRockIT Conf will include a mix of panel discussions, keynotes, speakers, and
+        hands-on workshops.
+      </div>
+      <br />
+      <div>
+        This year the topics will focus on: DevOps, IOT, Development, and Data Scienxe. So, come join us on our mission!
+      </div>
     </div>
     <!-- <div class="inline mx-auto p-2 bg-wri-teal rounded-full">Learn more</div> -->
-  </div>
+    <!-- </div> -->
+  </Tile>
 </template>
+
+<script>
+import Tile from '@/components/Tile.vue'
+
+export default {
+  components: { Tile },
+}
+</script>

@@ -1,6 +1,5 @@
 <template>
-  <div class="mx-auto bg-white p-30 text-center">
-    <div class="text-6xl font-bebas text-wri-teal">Tracks</div>
+  <Tile bgcolor="bg-white" title="Tracks">
     <div class="flex flex-wrap justify-center text-wri-teal text-5xl uppercase">
       <div class="bg-wri-dark-blue topic_box">
         <div>
@@ -22,10 +21,18 @@
       </div>
       <div class="bg-wri-dark-blue topic_box font-bebas">Data Science</div>
     </div>
-  </div>
+  </Tile>
 </template>
 
-<style>
+<script>
+import Tile from '@/components/Tile.vue'
+
+export default {
+  components: { Tile },
+}
+</script>
+
+<style scoped>
 .topic_box {
   @apply flex-shrink-0;
   @apply h-48;
