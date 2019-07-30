@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="uppercase font-montserrat font-bold block mt-4 md:inline-block md:mt-0 mr-4"
+    class="uppercase font-montserrat font-bold block lg:inline-block py-2 mr-4 border-b border-blue-200"
     :to="{ name: this.name }"
   >
     <slot></slot>
