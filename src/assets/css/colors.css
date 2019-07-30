@@ -6,6 +6,10 @@
   color: #1d2152;
 }
 
+.text-wri-dark-purple {
+  color: #3b2a60;
+}
+
 .text-wri-teal {
   color: #5ecec6;
 }
@@ -16,6 +20,10 @@
 
 .bg-wri-dark-blue {
   background-color: #1d2152;
+}
+
+.bg-wri-dark-purple {
+  background-color: #3b2a60;
 }
 
 .bg-wri-teal {
