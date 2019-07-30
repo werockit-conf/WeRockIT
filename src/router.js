@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import WorkInProgress from './views/WorkInProgress.vue'
 import Home from './views/Home.vue'
 import Speakers from './views/Speakers.vue'
+import Sponsor from './views/Sponsor.vue'
 import Venue from './views/Venue.vue'
 
 Vue.use(Router)
@@ -29,6 +30,11 @@ export default new Router({
     {
       path: '/venue',
       name: 'venue',
+      component: Venue,
+    },
+    {
+      path: '/sponsor',
+      name: 'sponsor',
       component: Venue,
     },
     // {
