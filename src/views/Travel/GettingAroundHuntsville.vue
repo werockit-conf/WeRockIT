@@ -5,7 +5,7 @@
     </div>
     <div class="p-6 md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
-        <img src="../../assets/adtran-office.jpg" />
+        <img src="../../assets/ride_share.jpg" />
       </div>
       <div class="md:w-1/2 md:ml-6 md:max-w-xl">
         <h3>Rental Car Agencies</h3>

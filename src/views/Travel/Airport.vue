@@ -7,7 +7,7 @@
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
         <img
           class="md:medium-image-block"
-          src="https://i.pinimg.com/originals/1a/5d/85/1a5d85d596f296fe37dba94fbaa25881.jpg"
+          src="../../assets/front_airplane.jpg"
         />
       </div>
       <div class="md:w-1/2 md:ml-6  md:max-w-xl">
