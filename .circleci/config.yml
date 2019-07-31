@@ -37,8 +37,7 @@ jobs:
       # run tests!
       - run: yarn test:unit
   deploy:
-    steps: 
-      working_directory: ~/WeRockIT
+    working_directory: ~/WeRockIT
 
     docker:
       - image: circleci/node:8.11.2
