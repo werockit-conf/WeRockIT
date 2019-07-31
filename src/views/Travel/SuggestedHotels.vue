@@ -2,14 +2,14 @@
   <tile bgcolor="bg-white" title="Suggested Hotels" titleColor="text-wri-dark-blue">
     <div class="flex flex-wrap justify-center">
       <SquareImageBlock
-        image="../../assets/westin.jpg"
+        image="@/assets/westin.jpg"
         target_url="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg"
         header="The Westin at Bridge Street"
         subtitle="6800 Governors West<br />Huntsville, AL 35806<br />"
       >
       </SquareImageBlock>
       <SquareImageBlock
-        image="../../assets/element.jpg"
+        image="@/assets/element.jpg"
         target_url="http://www.elementhuntsville.com/"
         header="The Element at Bridge Street"
         subtitle="6810 Governors West<br />Huntsville, AL 35806<br />"

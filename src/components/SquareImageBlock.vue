@@ -1,9 +1,8 @@
 <template>
   <div @mouseover="hover = true" @mouseleave="hover = false" class="relative box text-white">
-    <a :href="target_url" target="Westin"
-      >{
+    <a :href="target_url" target="_blank">
       <div class="z-0 absolute darken top-0 left-0">
-        <img class="object-cover h-64" v-bind:class="{ lighter: hover }" :src="image" />
+        <img class="object-cover h-64" v-bind:class="{ lighter: hover }" :src="image" alt="image" />
       </div>
       <div class="relative z-50 pt-3 mt-5">
         <div class="font-roboto-slab text-lg font-semibold ">
@@ -15,7 +14,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 img {
   filter: brightness(0.5);
 }
