@@ -25,8 +25,13 @@
             </svg>
           </button>
         </div>
-        <div :class="open ? 'block' : 'hidden'" class="w-full order-first lg:order-last">
-          <div class="bg-wri-dark-purple text-wri-teal px-24 py-8">
+        <div
+          :class="open ? 'block' : 'hidden'"
+          class="w-full lg:w-auto order-first lg:order-last lg:block lg:flex-grow"
+        >
+          <div
+            class="bg-wri-dark-purple text-wri-teal px-24 py-8 lg:bg-transparent lg:text-black lg:flex lg:justify-around"
+          >
             <NavBarLink name="home">About</NavBarLink>
             <NavBarLink name="WorkInProgress">Attend</NavBarLink>
             <NavBarLink name="speakers">Speakers</NavBarLink>
