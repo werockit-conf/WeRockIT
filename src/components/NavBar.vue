@@ -1,22 +1,36 @@
 <template>
   <div>
     <div :class="bgcolor" class="fixed top-0 left-0 right-0">
-      <nav ref="logo" class="flex items-center justify-between flex-wrap text-wri-black px-24 py-12">
-        <img alt="WeRockIT Conference" src="../assets/WeRockIT_logo.png" class="h-24 pr-4" />
-        <div class="block lg:hidden">
+      <nav ref="logo" class="flex items-center justify-between flex-wrap">
+        <img alt="WeRockIT Conference" src="../assets/WeRockIT_logo.png" class="h-24 mx-12 my-8" />
+        <div class="block lg:hidden mx-12 my-8">
           <button
             @click="toggle"
-            class="flex items-center px-3 py-2 border rounded text-gray-700 border-black hover:text-black"
+            class="border-wri-teal flex items-center px-3 py-2 rounded bg-wri-dark-purple text-wri-teal hover:text-black"
           >
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            <svg
+              height="32px"
+              id="Layer_1"
+              class="svg-fill"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+              />
             </svg>
           </button>
         </div>
-        <div :class="open ? 'block' : 'hidden'" class="w-full lg:w-auto lg:block flex-grow">
+        <div
+          :class="open ? 'block' : 'hidden'"
+          class="w-full lg:w-auto order-first lg:order-last lg:block lg:flex-grow"
+        >
           <div
-            class="text-sm md:text-xl flex-grow md:flex md:items-center md:justify-around bg-wri-teal md:bg-transparent"
+            class="bg-wri-dark-purple text-wri-teal px-24 py-8 lg:bg-transparent lg:text-black lg:flex lg:justify-around"
           >
             <NavBarLink name="home">About</NavBarLink>
             <!-- <NavBarLink name="WorkInProgress">Attend</NavBarLink>
@@ -56,3 +70,10 @@ export default {
   },
 }
 </script>
+
+<style>
+.svg-fill {
+  stroke: #5ecec6;
+  fill: #5ecec6;
+}
+</style>
