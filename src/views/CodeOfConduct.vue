@@ -20,7 +20,7 @@ export default {
 <style>
 header p {
   @apply text-2xl;
-  @apply font-black;
+  @apply font-bold;
   @apply leading-tight;
   @apply tracking-tight;
   @apply pt-5;
