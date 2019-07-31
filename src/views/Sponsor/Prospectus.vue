@@ -26,7 +26,7 @@
       <a
         href="mailto:contact@werockitconf.com?Subject=Sponorship%20inquiry"
         target="_blank"
-        class="inline p-3 m-3 bg-wri-dark-blue hover:bg-blue-400 rounded-full font-bebas text-white text-3xl"
+        class="inline p-3 m-3 bg-purple-700 hover:bg-blue-800 rounded-full font-bebas text-white text-3xl"
         >Get in touch</a
       >
     </div>
