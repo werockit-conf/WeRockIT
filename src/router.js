@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import WorkInProgress from './views/WorkInProgress.vue'
+import CodeOfConduct from './views/CodeOfConduct.vue'
 import Home from './views/Home.vue'
 import Speakers from './views/Speakers.vue'
 import Venue from './views/Venue.vue'
@@ -30,6 +31,11 @@ export default new Router({
       path: '/venue',
       name: 'venue',
       component: Venue,
+    },
+    {
+      path: '/codeofconduct',
+      name: 'codeofconduct',
+      component: CodeOfConduct,
     },
     // {
     //   path: '/about',
