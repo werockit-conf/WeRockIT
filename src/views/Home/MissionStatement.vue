@@ -1,7 +1,7 @@
 <template>
   <Tile title bgcolor="bg-wri-blue">
     <!-- <div class="container mx-auto bg-wri-blue p-20 text-center"> -->
-    <div class="mx-auto text-center text-3xl pb-12 text-white">
+    <div class="mx-auto text-center text-xl pb-12 text-white">
       <div>
         A premier event. WeRockIT Conf is an annual two-day conference that features all disciplines of technology and
         shows how they all can interconnect. We'll highlight a wide range of speakers to educate and inspire our guests.
@@ -18,8 +18,14 @@
         This year the topics will focus on: DevOps, IOT, Development, and Data Scienxe. So, come join us on our mission!
       </div>
     </div>
-    <!-- <div class="inline mx-auto p-2 bg-wri-teal rounded-full">Learn more</div> -->
-    <!-- </div> -->
+    <div class="container mx-auto text-center">
+      <router-link
+        class="uppercase font-montserrat font-bold block mt-4 inline p-2 bg-wri-teal rounded-full hover:bg-blue-300 text-2xl"
+        :to="{ name: 'codeofconduct' }"
+      >
+        Code Of Conduct
+      </router-link>
+    </div>
   </Tile>
 </template>
 
