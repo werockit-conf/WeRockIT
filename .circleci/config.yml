@@ -37,6 +37,9 @@ jobs:
       # run tests!
       - run: yarn test:unit
   deploy:
+    branches:
+      only:
+        - master
     steps: 
       working_directory: ~/WeRockIT
 
@@ -67,9 +70,9 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
       - run: echo "eventually to deploy here"
-      # - run: 
-      #     name: Firebase Deploy
-      #     command: yarn firebase deploy --token "$FIREBASE_TOKEN"
+      - run: 
+          name: Firebase Deploy
+          command: yarn firebase deploy --token "$FIREBASE_TOKEN" -P "$TARGET_ENVIRONMENT"
 
 workflows:
   version: 2
