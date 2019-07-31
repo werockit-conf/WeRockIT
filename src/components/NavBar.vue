@@ -33,11 +33,11 @@
             class="bg-wri-dark-purple text-wri-teal px-24 py-8 lg:bg-transparent lg:text-black lg:flex lg:justify-around"
           >
             <NavBarLink name="home">About</NavBarLink>
-            <NavBarLink name="WorkInProgress">Attend</NavBarLink>
+            <!-- <NavBarLink name="WorkInProgress">Attend</NavBarLink>
             <NavBarLink name="speakers">Speakers</NavBarLink>
             <NavBarLink name="WorkInProgress">Schedule</NavBarLink>
             <NavBarLink name="WorkInProgress">Sponsors</NavBarLink>
-            <NavBarLink name="WorkInProgress">Tickets</NavBarLink>
+            <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
           </div>
         </div>
       </nav>
