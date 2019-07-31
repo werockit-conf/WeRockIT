@@ -2,7 +2,7 @@
   <tile bgcolor="bg-white" title="Suggested Hotels" titleColor="text-wri-dark-blue">
     <div class="flex flex-wrap justify-center">
       <SquareImageBlock
-        image="@/assets/westin.jpg"
+        image="require('/.assets/westin.jpeg')"
         target_url="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg"
         header="The Westin at Bridge Street"
         subtitle="6800 Governors West<br />Huntsville, AL 35806<br />"
