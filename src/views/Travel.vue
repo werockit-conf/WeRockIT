@@ -36,37 +36,37 @@ export default {
 }
 </script>
 
-<style>
-h2 {
+<style scoped>
+::v-deep h2 {
   @apply text-6xl;
   @apply font-thin;
   @apply text-center;
   font-family: 'Bebas Neue W01 Regular';
 }
 
-h3 {
+::v-deep h3 {
   font-family: 'Bebas Neue W01 Regular';
   @apply text-3xl;
 }
 
-a {
+::v-deep a {
   font-family: 'Bebas Neue W01 Regular';
   @apply text-2xl;
   @apply font-hairline;
 }
 
-p {
+::v-deep p {
   @apply text-base;
   @apply font-thin;
 }
 
-ul {
+::v-deep ul {
   @apply text-2xl;
   @apply font-extrabold;
   @apply list-none;
 }
 
-li {
+::v-deep li {
   @apply text-xl;
   @apply pb-4;
 }
