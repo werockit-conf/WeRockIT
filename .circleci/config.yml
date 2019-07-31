@@ -36,9 +36,48 @@ jobs:
 
       # run tests!
       - run: yarn test:unit
+  deploy:
+    working_directory: ~/WeRockIT
+
+    docker:
+      - image: circleci/node:8.11.2
+
+    steps:
+      - checkout:
+          path: ~/WeRockIT
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: 
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+
+      - run:
+          name: Build Website
+          command: yarn build
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+
+      - run: echo "eventually to deploy here"
+      - run: 
+          name: Firebase Deploy
+          command: yarn firebase deploy --token "$FIREBASE_TOKEN" -P "$TARGET_ENVIRONMENT"
 
 workflows:
   version: 2
-  test:
+  test_and_deploy:
     jobs:
       - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master

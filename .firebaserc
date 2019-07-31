@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "werockit-conf-website",
+    "staging": "staging-werockitconf-45d15"
+  }
+}
