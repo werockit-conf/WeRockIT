@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-white p-30">
-    <h2>Suggested Hotels</h2>
+  <tile bgcolor="bg-white" title="Suggested Hotels" titleColor="text-wri-dark-blue">
     <div class="flex flex-wrap justify-center">
       <SquareImageBlock
         :image="'https://tdr.aaa.com/tdr-images/images/property_photo/accommodation/166103H1.jpg'"
@@ -24,16 +23,18 @@
       >
       </SquareImageBlock>
     </div>
-  </div>
+  </Tile>
 </template>
 
 <script>
-import SquareImageBlock from '../../components/SquareImageBlock.vue'
+import SquareImageBlock from '@/components/SquareImageBlock.vue'
+import Tile from '@/components/Tile.vue'
 
 export default {
   name: 'suggested-hotels',
   components: {
     SquareImageBlock,
+    Tile,
   },
 }
 </script>

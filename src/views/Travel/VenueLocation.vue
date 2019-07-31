@@ -1,9 +1,6 @@
 <template>
-  <div class="bg-white">
-    <div class="w-full">
-      <h2>Venue</h2>
-    </div>
-    <div class="p-6 md:flex md:justify-center">
+  <Tile bgcolor="bg-white" title="Venue" titleColor="text-wri-dark-blue">>
+    <div class="md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
         <img src="../../assets/adtran-office.jpg" />
         <!-- <iframe
@@ -17,11 +14,19 @@
         <h3>ADTRAN East Tower</h3>
         <p>ADTRAN Mark C. Smith Conference Center</p>
         <p>ADTRAN East Tower, 965 Explorer Blvd NW, Huntsville, AL 35806</p>
-        <p>
-          Located in the heart of Cummings Research Park, and I-565 exit 14, the ADTRAN Mark C. Smith Conference Center
+        <p class="pt-5">
+          Located in the heart of Cummings Research Park and I-565 exit 14. The ADTRAN Mark C. Smith Conference Center
           resides in ADTRAN's East Tower.
         </p>
       </div>
     </div>
-  </div>
+  </Tile>
 </template>
+
+<script>
+import Tile from '@/components/Tile.vue'
+
+export default {
+  components: { Tile },
+}
+</script>

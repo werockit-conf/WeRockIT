@@ -1,9 +1,6 @@
 <template>
-  <div class="bg-white p-6">
-    <div class="w-full">
-      <h2>Airport</h2>
-    </div>
-    <div class="p-6 md:flex md:justify-center">
+  <Tile bgcolor="bg-white" title="Airport" titleColor="text-wri-dark-blue">
+    <div class="md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
         <img
           class="md:medium-image-block"
@@ -21,5 +18,13 @@
         </p>
       </div>
     </div>
-  </div>
+  </Tile>
 </template>
+
+<script>
+import Tile from '@/components/Tile.vue'
+
+export default {
+  components: { Tile },
+}
+</script>

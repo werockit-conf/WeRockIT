@@ -6,7 +6,8 @@
     <SuggestedHotels></SuggestedHotels>
     <Airport></Airport>
     <GettingAroundHuntsville></GettingAroundHuntsville>
-    <ThingsTodo></ThingsTodo>
+    <Recreation></Recreation>
+    <Food></Food>
   </div>
 </template>
 
@@ -17,7 +18,8 @@ import Parking from './Travel/Parking.vue'
 import SuggestedHotels from './Travel/SuggestedHotels.vue'
 import Airport from './Travel/Airport.vue'
 import GettingAroundHuntsville from './Travel/GettingAroundHuntsville.vue'
-import ThingsTodo from './Travel/ThingsTodo.vue'
+import Recreation from './Travel/Recreation.vue'
+import Food from './Travel/Food.vue'
 
 export default {
   name: 'travel',
@@ -28,7 +30,8 @@ export default {
     SuggestedHotels,
     Airport,
     GettingAroundHuntsville,
-    ThingsTodo,
+    Recreation,
+    Food,
   },
 }
 </script>
@@ -54,6 +57,18 @@ a {
 
 p {
   @apply text-base;
+  @apply font-thin;
+}
+
+ul {
+  @apply text-2xl;
+  @apply font-extrabold;
+  @apply list-none;
+}
+
+li {
+  @apply text-xl;
+  @apply pb-4;
 }
 
 iframe,

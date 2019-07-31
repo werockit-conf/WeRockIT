@@ -1,9 +1,6 @@
 <template>
-  <div class="bg-white">
-    <div class="w-full">
-      <h2>GETTING AROUND HUNTSVILLE</h2>
-    </div>
-    <div class="p-6 md:flex md:justify-center">
+  <Tile bgcolor="bg-white" title="Getting Around Huntsville" titleColor="text-wri-dark-blue">
+    <div class="md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
         <img src="../../assets/ride_share.jpg" />
       </div>
@@ -14,7 +11,7 @@
             <a href="http://www.flyhuntsville.com/hsv/airport-information/ground-transportation/#.XT-1qZNKjUI">
               Ground Transportation through Huntsville International Airport</a
             >
-            <p>Rental cars available through Avis, Hertz, Enterprise, and more.</p>
+            <p class="font-thin">Rental cars available through Avis, Hertz, Enterprise, and more.</p>
           </li>
         </ul>
         <h3>Rideshare</h3>
@@ -37,5 +34,13 @@
         </ul>
       </div>
     </div>
-  </div>
+  </Tile>
 </template>
+
+<script>
+import Tile from '@/components/Tile.vue'
+
+export default {
+  components: { Tile },
+}
+</script>
