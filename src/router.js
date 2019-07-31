@@ -35,7 +35,7 @@ export default new Router({
     {
       path: '/sponsor',
       name: 'sponsor',
-      component: Venue,
+      component: Sponsor,
     },
     // {
     //   path: '/about',

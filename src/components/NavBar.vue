@@ -21,9 +21,9 @@
             <NavBarLink name="home">About</NavBarLink>
             <!-- <NavBarLink name="WorkInProgress">Attend</NavBarLink>
             <NavBarLink name="speakers">Speakers</NavBarLink>
-            <NavBarLink name="WorkInProgress">Schedule</NavBarLink>
-            <NavBarLink name="WorkInProgress">Sponsors</NavBarLink>
-            <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
+            <NavBarLink name="WorkInProgress">Schedule</NavBarLink> -->
+            <NavBarLink name="sponsor">Sponsors</NavBarLink>
+            <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>--> -->
           </div>
         </div>
       </nav>

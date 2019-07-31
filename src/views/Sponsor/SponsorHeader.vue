@@ -1,4 +1,3 @@
-    
 <template>
   <div class="home pt-64 pb-24">
     <div class="mx-auto text-white text-6xl font-thin">
