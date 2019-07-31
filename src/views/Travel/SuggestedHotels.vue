@@ -23,7 +23,7 @@
       >
       </SquareImageBlock>
     </div>
-  </Tile>
+  </tile>
 </template>
 
 <script>

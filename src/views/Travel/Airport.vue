@@ -2,10 +2,7 @@
   <Tile bgcolor="bg-white" title="Airport" titleColor="text-wri-dark-blue">
     <div class="md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
-        <img
-          class="md:medium-image-block"
-          src="../../assets/front_airplane.jpg"
-        />
+        <img class="md:medium-image-block" src="../../assets/front_airplane.jpg" />
       </div>
       <div class="md:w-1/2 md:ml-6  md:max-w-xl">
         <h3>Huntsville International Airport</h3>
