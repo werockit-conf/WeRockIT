@@ -37,9 +37,6 @@ jobs:
       # run tests!
       - run: yarn test:unit
   deploy:
-    branches:
-      only:
-        - master
     steps: 
       working_directory: ~/WeRockIT
 
@@ -79,4 +76,15 @@ workflows:
   test:
     jobs:
       - test
-      - deploy
+  deploy:
+    jobs:
+      - test:
+        filters:
+          branches:
+            only:
+              - master
+      - deploy:
+        filters:
+          branches:
+            only:
+              - master
