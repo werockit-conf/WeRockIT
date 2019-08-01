@@ -688,6 +688,37 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@fortawesome/fontawesome-common-types@^0.2.20":
+  version "0.2.20"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.20.tgz#b5450b07400aea96d87d24e98e22d4a3d8d59305"
+  integrity sha512-5wo0pMNS4gWTkplFAPSfNq4poXwLcgj8+khZs9/zbWMxC0hi6qnehXOrX7i7+Y7XyTQForja2WpR7Nz6LY2BtQ==
+
+"@fortawesome/fontawesome-svg-core@^1.2.20":
+  version "1.2.20"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.20.tgz#2b562dd73df08c835e1f42c04061029ee77b90b5"
+  integrity sha512-p18GsDaPeZOFKENyigYcEg0ez9UHqUO7wxcdxpoxsb0pMxvt4kW8RTrgUIW1z3/19E/Z1iRQDmB3ZyfZ+CcpSQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.20"
+
+"@fortawesome/free-brands-svg-icons@^5.10.0":
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.10.0.tgz#59c8cb53e860c79dcba98e59085abc2b03e89768"
+  integrity sha512-Wj4MSV4J4DL8+HgnRTt2mk3pE2n3RZojDAlcN2G+2yzsdkI5TbXODY9bnfxs7Ik02GMqdhTdeHj/orxJYcYGLA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.20"
+
+"@fortawesome/free-solid-svg-icons@^5.10.0":
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.10.0.tgz#ccc803828f6b71db78414550faa7b1c4ebf494b2"
+  integrity sha512-Ndt0GR9wU66lBLGMRZN2jv8LEDx+VTfwmnqYKLQ3VttH4ikgTpqBhdr7UF4M3GFYt1CwftrPVuKOUAFleYg7xA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.20"
+
+"@fortawesome/vue-fontawesome@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.6.tgz#18a0f4263b90f65180fc927325ba01896276ea04"
+  integrity sha512-HAGRbrOuGDwwUmCYdpzR0hhNQ3EE30dOS4JiJKcoZ+S4M210CxyU0OXCgzIg3HzK/23rlpHbV8zi9PDDZDnuIw==
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -1271,6 +1302,11 @@ acorn@^6.0.1, acorn@^6.0.2, acorn@^6.0.4, acorn@^6.0.7, acorn@^6.1.1:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.2.0.tgz#67f0da2fc339d6cfb5d6fb244fd449f33cd8bbe3"
   integrity sha512-8oe72N3WPMjA+2zVG71Ia0nXZ8DpQH+QyyHO+p06jT8eg8FGG3FbcUIi8KziHlAfheJQZeoqbvq1mQSQHXKYLw==
+
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
 
 address@^1.0.3:
   version "1.1.0"
@@ -10544,6 +10580,11 @@ yargs@^13.0.0:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.0"
+
+yarn@^1.17.3:
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.17.3.tgz#60e0b77d079eb78e753bb616f7592b51b6a9adce"
+  integrity sha512-CgA8o7nRZaQvmeF/WBx2FC7f9W/0X59T2IaLYqgMo6637wfp5mMEsM3YXoJtKUspnpmDJKl/gGFhnqS+sON7hA==
 
 yauzl@2.10.0:
   version "2.10.0"

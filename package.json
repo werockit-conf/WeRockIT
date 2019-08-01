@@ -11,9 +11,15 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.20",
+    "@fortawesome/free-brands-svg-icons": "^5.10.0",
+    "@fortawesome/free-solid-svg-icons": "^5.10.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "add": "^2.0.6",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "vue-router": "^3.0.3",
+    "yarn": "^1.17.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
