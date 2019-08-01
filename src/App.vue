@@ -24,7 +24,7 @@ export default {
 @tailwind components;
 
 @import './assets/css/fonts.css';
-@import './assets/css/colors.css';
+/* @import './assets/css/colors.css'; */
 
 @tailwind utilities;
 </style>
