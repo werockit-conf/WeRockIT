@@ -37,6 +37,18 @@
             <!-- <NavBarLink name="speakers">Speakers</NavBarLink>
             <NavBarLink name="WorkInProgress">Schedule</NavBarLink> -->
             <NavBarLink name="sponsor">Sponsors</NavBarLink>
+            <a
+              href="https://2019.werockitconf.com"
+              target="_blank"
+              class="external-nav-link font-montserrat lg:external-nav-link-large"
+              >Past Events</a
+            >
+            <a
+              href="https://www.papercall.io/werockitconf2020"
+              target="_blank"
+              class="external-nav-link font-montserrat lg:external-nav-link-large"
+              >2020 CFP</a
+            >
             <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
           </div>
         </div>
@@ -44,6 +56,22 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.external-nav-link {
+  @apply uppercase;
+  @apply font-bold;
+  @apply block;
+  @apply py-2;
+  @apply mr-4;
+}
+
+.external-nav-link-large {
+  @apply inline-block;
+  @apply border-b;
+  @apply border-blue-200;
+}
+</style>
 
 <script>
 import NavBarLink from './NavBarLink.vue'
