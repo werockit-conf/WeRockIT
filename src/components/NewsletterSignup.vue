@@ -1,5 +1,5 @@
 <template>
-  <div id="mc_embed_signup" class="w-4/5 mx-auto">
+  <div id="mc_embed_signup" class="w-full lg:w-4/5 mx-auto">
     <form
       action="https://werockitconf.us18.list-manage.com/subscribe/post?u=3634b15a058bb3b50ac55d0a3&amp;id=62551c1fe0"
       method="post"
@@ -18,7 +18,7 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_3634b15a058bb3b50ac55d0a3_62551c1fe0" tabindex="-1" value />
         </div>
-        <div class="inline text-left">
+        <div class="inline text-left pl-4">
           <input
             type="email"
             value
@@ -28,17 +28,33 @@
             id="mce-EMAIL"
           />
         </div>
-        <div class="inline">
+        <div class="hidden lg:inline">
           <input
             type="submit"
             value="Subscribe"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="button float-right bg-wri-dark-blue text-white rounded-full px-5"
+            class="button bg-wri-dark-blue text-white rounded-full px-5 float-right"
           />
         </div>
+      </div>
+      <div class="lg:hidden text-center w-full pt-2">
+        <input
+          type="submit"
+          value="Subscribe"
+          name="subscribe"
+          id="mc-embedded-subscribe"
+          class="button bg-wri-dark-blue text-white rounded-full px-5 text-2xl w-full"
+        />
       </div>
     </form>
     <br />
   </div>
 </template>
+
+<style scoped>
+textarea:focus,
+input:focus {
+  outline: none;
+}
+</style>
