@@ -19,7 +19,6 @@
 
 <style scoped>
 .bg-wri-image {
-  /* background-image: url('../../assets/werockit-web-background.jpg'); */
   background-image: url('~@/assets/images/landing_background.jpg');
   background-repeat: no-repeat;
   background-size: 250%;
