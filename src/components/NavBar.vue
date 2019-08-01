@@ -27,7 +27,7 @@
       <div :class="open ? 'block' : 'hidden'" class="w-full lg:w-auto order-first lg:order-last lg:block lg:flex-grow">
         <div
           :class="lgTextColor"
-          class="bg-wri-dark-purple text-wri-teal px-24 py-8 lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
+          class="text-wri-teal px-24 py-8 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
         >
           <NavBarLink name="home">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
