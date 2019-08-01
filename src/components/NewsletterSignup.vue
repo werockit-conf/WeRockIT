@@ -18,7 +18,7 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_3634b15a058bb3b50ac55d0a3_62551c1fe0" tabindex="-1" value />
         </div>
-        <div class="inline text-left">
+        <div class="inline text-left pl-4">
           <input
             type="email"
             value
@@ -28,13 +28,13 @@
             id="mce-EMAIL"
           />
         </div>
-        <div class="inline">
+        <div class="lg:inline">
           <input
             type="submit"
             value="Subscribe"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="button float-right bg-wri-dark-blue text-white rounded-full px-5"
+            class="button bg-wri-dark-blue text-white rounded-full px-5"
           />
         </div>
       </div>
@@ -42,3 +42,10 @@
     <br />
   </div>
 </template>
+
+<style scoped>
+textarea:focus,
+input:focus {
+  outline: none;
+}
+</style>
