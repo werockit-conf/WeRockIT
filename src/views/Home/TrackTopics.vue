@@ -36,10 +36,17 @@ export default {
 .topic_box {
   @apply flex-shrink-0;
   @apply h-48;
-  @apply w-1/3;
+  @apply w-full;
   @apply m-6;
   @apply flex;
   @apply justify-center;
   @apply items-center;
+  @apply text-center;
+}
+
+@screen lg {
+  .topic_box {
+    @apply w-1/3;
+  }
 }
 </style>
