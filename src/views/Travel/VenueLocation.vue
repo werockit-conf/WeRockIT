@@ -1,6 +1,5 @@
 <template>
-  <Tile bgcolor="bg-white" title="Venue" titleColor="text-wri-dark-blue"
-    >>
+  <Tile bgcolor="bg-white" title="Venue" titleColor="text-wri-dark-blue">
     <div class="md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
         <img src="../../assets/adtran-office.jpg" />
