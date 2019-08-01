@@ -9,6 +9,11 @@ module.exports = {
         'wri-dark-purple': '#3b2a60',
         'wri-teal': '#5ecec6',
       },
+      fontSize: {
+        '7xl': '5rem',
+        '8xl': '6rem',
+        '9xl': '7rem',
+      },
     },
   },
   variants: {},
