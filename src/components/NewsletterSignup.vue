@@ -1,5 +1,5 @@
 <template>
-  <div id="mc_embed_signup" class="w-4/5 mx-auto">
+  <div id="mc_embed_signup" class="w-full lg:w-4/5 mx-auto">
     <form
       action="https://werockitconf.us18.list-manage.com/subscribe/post?u=3634b15a058bb3b50ac55d0a3&amp;id=62551c1fe0"
       method="post"
@@ -28,15 +28,24 @@
             id="mce-EMAIL"
           />
         </div>
-        <div class="lg:inline">
+        <div class="hidden lg:inline">
           <input
             type="submit"
             value="Subscribe"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="button bg-wri-dark-blue text-white rounded-full px-5"
+            class="button bg-wri-dark-blue text-white rounded-full px-5 float-right"
           />
         </div>
+      </div>
+      <div class="lg:hidden text-center w-full pt-2">
+        <input
+          type="submit"
+          value="Subscribe"
+          name="subscribe"
+          id="mc-embedded-subscribe"
+          class="button bg-wri-dark-blue text-white rounded-full px-5 text-2xl w-full"
+        />
       </div>
     </form>
     <br />
