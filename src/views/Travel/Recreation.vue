@@ -2,7 +2,7 @@
   <Tile bgcolor="bg-white" title="Recreation" titleColor="text-wri-dark-blue">
     <div class="p-6 md:flex md:justify-center">
       <div class="md:flex-shrink-0 md:w-1/2 md:max-w-xl">
-        <img src="@/assets/nightlife.jpg" />
+        <img src="@/assets/thingstodo.jpeg" />
       </div>
       <div class="md:w-1/2 md:ml-6 md:max-w-xl">
         <ul>
