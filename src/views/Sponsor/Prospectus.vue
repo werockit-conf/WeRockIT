@@ -20,7 +20,7 @@
       <a
         href="mailto:contact@werockitconf.com?Subject=Sponorship%20inquiry%20prospectus%20request"
         target="_blank"
-        class="inline p-3 m-3 bg-purple-700 hover:bg-blue-800 rounded-full font-bebas text-white text-3xl"
+        class="inline p-3 m-3 bg-wri-purple hover:bg-wri-blue rounded-full font-bebas text-white text-3xl"
         >Request Prospectus</a
       >
     </div>
