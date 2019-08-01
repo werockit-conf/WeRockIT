@@ -40,13 +40,13 @@
             <a
               href="https://2019.werockitconf.com"
               target="_blank"
-              class="external-nav-link font-montserrat lg:external-nav-link-large"
+              class="uppercase font-montserrat font-bold block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
               >Past Events</a
             >
             <a
               href="https://www.papercall.io/werockitconf2020"
               target="_blank"
-              class="external-nav-link font-montserrat lg:external-nav-link-large"
+              class="uppercase font-montserrat font-bold block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
               >2020 CFP</a
             >
             <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
@@ -56,22 +56,6 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.external-nav-link {
-  @apply uppercase;
-  @apply font-bold;
-  @apply block;
-  @apply py-2;
-  @apply mr-4;
-}
-
-.external-nav-link-large {
-  @apply inline-block;
-  @apply border-b;
-  @apply border-blue-200;
-}
-</style>
 
 <script>
 import NavBarLink from './NavBarLink.vue'
