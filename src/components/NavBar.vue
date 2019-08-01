@@ -37,6 +37,18 @@
             <!-- <NavBarLink name="speakers">Speakers</NavBarLink>
             <NavBarLink name="WorkInProgress">Schedule</NavBarLink> -->
             <NavBarLink name="sponsor">Sponsors</NavBarLink>
+            <a
+              href="https://2019.werockitconf.com"
+              target="_blank"
+              class="uppercase font-montserrat font-bold block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
+              >Past Events</a
+            >
+            <a
+              href="https://www.papercall.io/werockitconf2020"
+              target="_blank"
+              class="uppercase font-montserrat font-bold block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
+              >2020 CFP</a
+            >
             <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
           </div>
         </div>
