@@ -4,10 +4,8 @@
       <div class="z-0 absolute darken top-0 left-0">
         <img class="object-cover h-64" :class="{ lighter: hover }" :src="imagePath()" alt="image" />
       </div>
-      <div class="relative z-50 pt-3 mt-5">
-        <div class="font-roboto-slab text-xl font-semibold ">
-          {{ header }}
-        </div>
+      <div class="relative z-20 pt-3 mt-5">
+        <div class="font-roboto-slab text-xl font-semibold">{{ header }}</div>
         <p class="font-montserrat text-base p-3" v-html="subtitle"></p>
       </div>
     </a>

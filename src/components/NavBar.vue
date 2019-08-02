@@ -1,5 +1,5 @@
 <template>
-  <div :class="displayClasses">
+  <div :class="displayClasses" class="z-50">
     <nav ref="logo" class="flex items-center justify-between flex-wrap">
       <img alt="WeRockIT Conference" src="../assets/WeRockIT_logo.png" class="h-20 lg:h-24 mx-12 my-8" />
       <div class="block lg:hidden mx-12 my-8">
