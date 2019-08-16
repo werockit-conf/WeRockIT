@@ -12,6 +12,8 @@
             WeRockIT provides a quiet room to work, read, think, or have much needed recovery time.
           </p>
         </SquareImageBlock>
+      </div>
+      <div class="flex flex-wrap">
         <SquareImageBlock
           image_path="images/attend/speed_mentorship.png"
           header="Speed Mentorship"
@@ -22,11 +24,11 @@
             required.
           </p>
         </SquareImageBlock>
-      </div>
-      <div class="flex flex-wrap">
         <SquareImageBlock image_path="images/attend/workshops.png" header="Workshops" :hover_enabled="false">
           <p class="text-base">Learn a new skill. WeRockIT will offer beginner to intermediate level workshops</p>
         </SquareImageBlock>
+      </div>
+      <div class="flex flex-wrap">
         <SquareImageBlock image_path="images/attend/social_room.png" header="Social Lounge" :hover_enabled="false">
         </SquareImageBlock>
         <SquareImageBlock image_path="images/attend/social_level.jpg" header="Social Level" :hover_enabled="false">

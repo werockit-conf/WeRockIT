@@ -1,5 +1,5 @@
 <template>
-  <div @mouseover="hover = true" @mouseleave="hover = false" class="relative box text-white">
+  <div @mouseover="hover = true" @mouseleave="hover = false" class="relative box flex-grow text-white">
     <div class="z-0 absolute darken top-0 left-0">
       <img
         v-if="this.hover_enabled"
@@ -30,7 +30,6 @@ img {
 
 .box {
   @apply inline-block;
-  @apply h-64;
   @apply w-64;
   @apply m-4;
   @apply p-3;
