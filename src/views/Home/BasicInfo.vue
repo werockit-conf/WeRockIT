@@ -1,6 +1,6 @@
 <template>
-  <div class="home pt-32 lg:pt-64 bg-wri-image pb-24">
-    <div class="mx-auto text-wri-teal font-bebas font-thin">
+  <div class="pt-32 lg:pt-64 bg-wri-image pb-24">
+    <div class="text-wri-teal font-bebas">
       <div class="text-center">
         <h1 class="uppercase text-6xl lg:text-9xl pt-20 lg:pt-32">WeRockIT 2020</h1>
         <div class="hidden lg:block">
