@@ -1,68 +1,43 @@
 <template>
   <tile bgcolor="bg-white" title="Beyond The Talks" titleColor="text-wri-dark-blue">
-    <div class="justify-center flex flex-wrap xl:hidden">
-      <AttendSquareImage image_path="images/attend/mothers_room.jpg" header="Mothers Room" class="attend_block">
-        <p class="text-base">
-          A private mothers room equipped with a refrigerator will be available throughout the event
-        </p>
-      </AttendSquareImage>
-      <AttendSquareImage image_path="images/attend/quiet_room.jpg" header="Quiet Room" class="attend_block">
-        <p class="text-base">
-          WeRockIT provides a quiet room to work, read, think, or have much needed recovery time.
-        </p>
-      </AttendSquareImage>
-      <AttendSquareImage image_path="images/attend/speed_mentorship.jpg" header="Speed Mentorship" class="attend_block">
-        <p class="text-base">
-          Pair off with several experienced professionals to gain insight, advice, and knowledge. Preregistration
-          required.
-        </p>
-      </AttendSquareImage>
-      <AttendSquareImage image_path="images/attend/workshops.jpg" header="Workshops" class="attend_block">
-        <p class="text-base">Learn a new skill. WeRockIT will offer beginner to intermediate level workshops</p>
-      </AttendSquareImage>
-      <AttendSquareImage image_path="images/attend/social_room.jpg" header="Social Lounge" class="attend_block">
-      </AttendSquareImage>
-      <AttendSquareImage image_path="images/attend/social_level.jpg" header="Social Level" class="attend_block">
-        <p class="text-base">Establish your level of preferred social interaction with color coded lanyards</p>
-      </AttendSquareImage>
-    </div>
-    <div class="">
-      <div class="justify-center xl:flex xl:flex-wrap hidden">
-        <AttendSquareImage image_path="images/attend/mothers_room.jpg" header="Mothers Room" class="attend_block">
+    <div class="flex flex-wrap justify-center">
+      <div class="flex flex-wrap">
+        <SquareImageBlock image_path="images/attend/mothers_room.png" header="Mothers Room" :hover_enabled="false">
           <p class="text-base">
             A private mothers room equipped with a refrigerator will be available throughout the event
           </p>
-        </AttendSquareImage>
-        <AttendSquareImage image_path="images/attend/quiet_room.jpg" header="Quiet Room" class="attend_block">
+        </SquareImageBlock>
+        <SquareImageBlock image_path="images/attend/quiet_room.png" header="Quiet Room" :hover_enabled="false">
           <p class="text-base">
             WeRockIT provides a quiet room to work, read, think, or have much needed recovery time.
           </p>
-        </AttendSquareImage>
-        <AttendSquareImage
-          image_path="images/attend/speed_mentorship.jpg"
+        </SquareImageBlock>
+        <SquareImageBlock
+          image_path="images/attend/speed_mentorship.png"
           header="Speed Mentorship"
-          class="attend_block"
+          :hover_enabled="false"
         >
           <p class="text-base">
             Pair off with several experienced professionals to gain insight, advice, and knowledge. Preregistration
             required.
           </p>
-        </AttendSquareImage>
+        </SquareImageBlock>
       </div>
-      <div class="justify-center xl:flex xl:flex-wrap hidden">
-        <AttendSquareImage image_path="images/attend/workshops.jpg" header="Workshops" class="attend_block">
+      <div class="flex flex-wrap">
+        <SquareImageBlock image_path="images/attend/workshops.png" header="Workshops" :hover_enabled="false">
           <p class="text-base">Learn a new skill. WeRockIT will offer beginner to intermediate level workshops</p>
-        </AttendSquareImage>
-        <AttendSquareImage image_path="images/attend/social_room.jpg" header="Social Lounge" class="attend_block">
-        </AttendSquareImage>
-        <AttendSquareImage image_path="images/attend/social_level.jpg" header="Social Level" class="attend_block">
+        </SquareImageBlock>
+        <SquareImageBlock image_path="images/attend/social_room.png" header="Social Lounge" :hover_enabled="false">
+        </SquareImageBlock>
+        <SquareImageBlock image_path="images/attend/social_level.jpg" header="Social Level" :hover_enabled="false">
           <p class="text-base">Establish your level of preferred social interaction with color coded lanyards</p>
-        </AttendSquareImage>
+        </SquareImageBlock>
       </div>
     </div>
   </tile>
 </template>
 
+<<<<<<< HEAD
 <style scoped>
 .attend_block {
   @apply m-6;
@@ -71,12 +46,20 @@
 
 <script>
 import AttendSquareImage from './AttendSquareImage.vue'
+=======
+<script>
+import SquareImageBlock from '@/components/SquareImageBlock.vue'
+>>>>>>> Initial wip for the attend section of the site.
 import Tile from '@/components/Tile.vue'
 
 export default {
   name: 'suggested-hotels',
   components: {
+<<<<<<< HEAD
     AttendSquareImage,
+=======
+    SquareImageBlock,
+>>>>>>> Initial wip for the attend section of the site.
     Tile,
   },
 }
