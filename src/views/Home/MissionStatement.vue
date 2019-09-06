@@ -15,7 +15,7 @@
       </div>
       <br />
       <div>
-        This year the topics will focus on: DevOps, IOT, Development, and Data Scienxe. So, come join us on our mission!
+        This year the topics will focus on: DevOps, IOT, Development, and Data Science. So, come join us on our mission!
       </div>
     </div>
     <div class="container mx-auto text-center">
