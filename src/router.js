@@ -7,6 +7,7 @@ import Speakers from './views/Speakers.vue'
 import Sponsor from './views/Sponsor.vue'
 import Team from './views/Team.vue'
 import Travel from './views/Travel.vue'
+import Organizers from './views/Organizers.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/organizers',
+      name: 'organizers',
+      component: Organizers,
     },
     {
       path: '/speakers',
