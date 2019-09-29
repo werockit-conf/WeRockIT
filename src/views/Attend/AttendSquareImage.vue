@@ -9,10 +9,8 @@
 .box {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  @apply inline-block;
   @apply w-64;
   @apply h-64;
-  @apply m-6;
   @apply p-5;
   @apply text-center;
   @apply text-white;
