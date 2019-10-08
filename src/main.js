@@ -4,9 +4,10 @@ import router from './router'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faTwitter, faInstagram, faLinkedin)
+library.add(faTwitter, faInstagram, faLinkedin, faLink)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
