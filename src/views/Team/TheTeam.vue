@@ -1,9 +1,10 @@
 <template>
   <Tile bgcolor="bg-white" title="" titleColor="text-wri-dark-blue">
-    <div class="flex flex-wrap">
+    <div class="sm:flex sm:flex-wrap sm:justify-center">
       <PersonCard
-        v-for="person in team" :key="person.id"
-        class="w-1/4"
+        v-for="person in team"
+        :key="person.id"
+        class="sm:w-2/4"
         :image_path="person.image_path"
         :name="person.name"
         :job_title="person.job_title"
@@ -29,16 +30,6 @@ export default {
   data() {
     return {
       team: [
-        {
-          id: 1,
-          image_path: 'team/angelina.jpg',
-          name: 'Angelina Uno-Antonison',
-          job_title: 'Software Developer III - Genomics',
-          company: 'Center for Computation Genomics and Data Science at UAB',
-          linkedin: 'https://www.linkedin.com/in/angeunoantonison/',
-          website: 'kittenware.horncats.net',
-          twitter: 'https://twitter.com/SeriousHorncat',
-        },
         {
           id: 2,
           image_path: 'team/marcia.jpg',
@@ -66,11 +57,11 @@ export default {
         {
           id: 5,
           image_path: 'team/marissa.jpg',
-          name: 'Marissa Jones'         
+          name: 'Marissa Jones',
         },
         {
           id: 6,
-          image_path: '',
+          image_path: 'placeholder.png',
           name: 'Raelyn Bangel',
           job_title: 'Software Consultant',
           company: 'Test Double, LLC',
@@ -78,11 +69,21 @@ export default {
         },
         {
           id: 7,
-          image_path: 'team/lacy.jpg',
+          image_path: 'team/lacey.jpg',
           name: 'Lacey Reinoehl',
           job_title: 'Head of Product',
           company: 'Lojix',
           linkedin: 'https://www.linkedin.com/in/lacey-reinoehl/',
+        },
+        {
+          id: 1,
+          image_path: 'team/angelina.jpg',
+          name: 'Angelina Uno-Antonison',
+          job_title: 'Software Developer III - Genomics',
+          company: 'UAB Medicine',
+          linkedin: 'https://www.linkedin.com/in/angeunoantonison/',
+          website: 'kittenware.horncats.net',
+          twitter: 'https://twitter.com/SeriousHorncat',
         },
       ],
     }

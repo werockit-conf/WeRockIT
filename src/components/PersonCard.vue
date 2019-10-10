@@ -1,11 +1,11 @@
 <template>
-  <div class="text-center p-5">
+  <div class="p-5 text-center  sm:max-w-sm">
     <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
-    <span class="font-bold text-m">{{ name }}</span
+    <span class="font-bold text-lg">{{ name }}</span
     ><br />
-    <span class="text-xs">{{ job_title }}</span
+    <span class="text-sm sm:text-md">{{ job_title }}</span
     ><br />
-    <span class="italic text-sm">{{ company }}</span>
+    <span class="italic text-md sm:text-lg">{{ company }}</span>
     <div class="mt-3">
       <a v-if="this.linkedin != ''" :href="this.linkedin" target="_blank"
         ><font-awesome-icon
