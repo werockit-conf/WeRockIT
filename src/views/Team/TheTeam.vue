@@ -47,14 +47,6 @@ export default {
           linkedin: 'https://www.linkedin.com/in/vcdavis1003/',
         },
         {
-          id: 4,
-          image_path: 'team/may.jpg',
-          name: 'May Chen',
-          job_title: 'Software Development Engineer',
-          company: 'ADTRAN, Inc.',
-          linkedin: 'https://www.linkedin.com/in/maychen36/',
-        },
-        {
           id: 5,
           image_path: 'team/marissa.jpg',
           name: 'Marissa Jones',
