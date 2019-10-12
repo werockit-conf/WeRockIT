@@ -53,7 +53,7 @@ export default {
         },
         {
           id: 6,
-          image_path: 'placeholder.png',
+          image_path: 'team/raelyn.jpg',
           name: 'Raelyn Bangel',
           job_title: 'Software Consultant',
           company: 'Test Double, LLC',
