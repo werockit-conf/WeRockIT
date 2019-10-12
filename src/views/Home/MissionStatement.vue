@@ -3,7 +3,7 @@
     <!-- <div class="container mx-auto bg-wri-blue p-20 text-center"> -->
     <div class="mx-auto text-center text-xl pb-12 text-white">
       <div>
-        A premier event. WeRockIT Conf is an annual two-day conference that features all disciplines of technology and
+        WeRockIT Conf is an annual two-day conference that features all disciplines of technology and
         shows how they all can interconnect. We'll highlight a wide range of speakers to educate and inspire our guests.
         Our mission is to showcase and grow diverse voices in technology.
       </div>
