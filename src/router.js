@@ -5,6 +5,7 @@ import CodeOfConduct from './views/CodeOfConduct.vue'
 import Home from './views/Home.vue'
 import Speakers from './views/Speakers.vue'
 import Sponsor from './views/Sponsor.vue'
+import Team from './views/Team.vue'
 import Travel from './views/Travel.vue'
 
 Vue.use(Router)
@@ -42,6 +43,11 @@ export default new Router({
       path: '/sponsor',
       name: 'sponsor',
       component: Sponsor,
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: Team,
     },
     // {
     //   path: '/about',
