@@ -14,14 +14,14 @@ Vue.config.productionTip = false
 const isProd = process.env.NODE_ENV === 'production'
 const trackingId = process.env.VUE_APP_GOOGLE_ANALYTICS_ID
 
-// Vue.use(VueAnalytics, {
-//   id: trackingId,
-//   router,
-//   debug: {
-//     enabled: !isProd,
-//     sendHitTask: isProd,
-//   },
-// })
+Vue.use(VueAnalytics, {
+  id: trackingId,
+  router,
+  debug: {
+    enabled: !isProd,
+    sendHitTask: isProd,
+  },
+})
 
 new Vue({
   router,
