@@ -1,11 +1,9 @@
 <template>
   <div class="p-5 text-center  sm:max-w-sm">
     <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
-    <span class="font-bold text-lg">{{ name }}</span
-    ><br />
-    <span class="text-sm sm:text-md">{{ job_title }}</span
-    ><br />
-    <span class="italic text-md sm:text-lg">{{ company }}</span>
+    <div class="font-bold text-lg">{{ name }}</div>
+    <div v-if="job_title != ''" class="text-sm sm:text-md">{{ job_title }}</div>
+    <div v-if="company != ''" class="italic text-md sm:text-lg">{{ company }}</div>
     <div class="mt-3">
       <a v-if="this.linkedin != ''" :href="this.linkedin" target="_blank"
         ><font-awesome-icon
@@ -28,8 +26,6 @@
     </div>
   </div>
 </template>
-
-<style scoped></style>
 
 <script>
 export default {
@@ -66,7 +62,11 @@ export default {
   },
   methods: {
     imagePath: function() {
-      return require('@/assets/' + this.image_path)
+      if (this.image_path.startsWith('http')) {
+        return this.image_path
+      } else {
+        return require('@/assets/' + this.image_path)
+      }
     },
   },
 }

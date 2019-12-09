@@ -2,7 +2,7 @@
   <Tile bgcolor="bg-white" title="" titleColor="text-wri-dark-blue">
     <div class="sm:flex sm:flex-wrap sm:justify-center">
       <PersonCard
-        v-for="person in team"
+        v-for="person in sortedTeam"
         :key="person.id"
         class="sm:w-2/4"
         :image_path="person.image_path"
@@ -20,6 +20,7 @@
 <script>
 import Tile from '@/components/Tile.vue'
 import PersonCard from '@/components/PersonCard.vue'
+import WeRockData from '@/components/werockdata.js'
 
 export default {
   name: 'the-team',
@@ -27,58 +28,29 @@ export default {
     Tile,
     PersonCard,
   },
-  data() {
+  data: function() {
     return {
-      team: [
-        {
-          id: 2,
-          image_path: 'team/marcia.jpg',
-          name: 'Marcia Ensley',
-          job_title: 'Software Engineer',
-          company: 'Northrop Grumman',
-          linkedin: 'https://www.linkedin.com/in/mdensley/',
-        },
-        {
-          id: 3,
-          image_path: 'team/val.jpg',
-          name: 'Valerie Davis',
-          job_title: 'Systems Engineer',
-          company: 'IERUS Technologies, Inc',
-          linkedin: 'https://www.linkedin.com/in/vcdavis1003/',
-        },
-        {
-          id: 5,
-          image_path: 'team/marissa.jpg',
-          name: 'Marissa Jones',
-        },
-        {
-          id: 6,
-          image_path: 'team/raelyn.jpg',
-          name: 'Raelyn Bangel',
-          job_title: 'Software Consultant',
-          company: 'Test Double, LLC',
-          linkedin: 'https://www.linkedin.com/in/raelyn-bangel',
-        },
-        {
-          id: 7,
-          image_path: 'team/lacey.jpg',
-          name: 'Lacey Reinoehl',
-          job_title: 'Head of Product',
-          company: 'Lojix',
-          linkedin: 'https://www.linkedin.com/in/lacey-reinoehl/',
-        },
-        {
-          id: 1,
-          image_path: 'team/angelina.jpg',
-          name: 'Angelina Uno-Antonison',
-          job_title: 'Software Developer III - Genomics',
-          company: 'UAB Medicine',
-          linkedin: 'https://www.linkedin.com/in/angeunoantonison/',
-          website: 'kittenware.horncats.net',
-          twitter: 'https://twitter.com/SeriousHorncat',
-        },
-      ],
+      team: [],
     }
+  },
+  computed: {
+    sortedTeam: function() {
+      this.sortTeam()
+      return this.team
+    },
+  },
+  methods: {
+    sortTeam: function() {
+      this.team.sort(function(a, b) {
+        return a.name > b.name ? 1 : -1
+      })
+    },
+    fetchTeam: function() {
+      this.team = WeRockData.team()
+    },
+  },
+  mounted() {
+    this.fetchTeam()
   },
 }
 </script>
