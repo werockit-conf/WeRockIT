@@ -3,6 +3,7 @@
     <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
     <div class="font-bold text-lg">{{ name }}</div>
     <div v-if="job_title != ''" class="text-sm sm:text-md">{{ job_title }}</div>
+    <div v-if="secondary_title != ''" class="text-sm sm:text-md">{{ secondary_title }}</div>
     <div v-if="company != ''" class="italic text-md sm:text-lg">{{ company }}</div>
     <div class="mt-3">
       <a v-if="this.linkedin != ''" :href="this.linkedin" target="_blank"
@@ -40,6 +41,10 @@ export default {
       default: '',
     },
     job_title: {
+      type: String,
+      default: '',
+    },
+    secondary_title: {
       type: String,
       default: '',
     },
