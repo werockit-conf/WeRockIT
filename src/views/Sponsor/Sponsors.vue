@@ -1,26 +1,50 @@
 <template>
-  <Tile bgcolor="bg-white" title="Sponsors" titleColor="text-wri-dark-blue" class="text-center">
-    <span class="text-wri-teal text-7xl font-bebas">Platinum</span>
-    <div class="flex flex-wrap justify-center">
-      <img class="inline-block w-1/3" src="@/assets/images/sponsors/facebook.png" />
-    </div>
-    <br />
-    <span class="text-wri-teal text-7xl font-bebas">Diamond</span>
-    <div class="flex flex-wrap justify-center">
-      <img class="inline-block" src="@/assets/AdtranLogo.png" />
-    </div>
-    <br />
-    <span class="text-wri-teal text-7xl font-bebas">Silver</span>
-    <div class="flex flex-wrap justify-center">
-      <img class="inline-block" src="@/assets/simple_helix.png" />
+  <Tile bgcolor="bg-white" title="" titleColor="text-wri-dark-blue">
+    <div class="sm:flex sm:flex-wrap sm:justify-center">
+      <div v-for="level in levels" :key="level">
+        <span class="text-wri-teal text-7xl font-bebas">{{ level }}</span>
+
+        <SponsorCard
+          v-for="sponsor in sponsors"
+          :key="sponsor.id"
+          :image_path="sponsor.image_path"
+          :name="sponsor.name"
+        />
+        <br />
+      </div>
     </div>
   </Tile>
 </template>
 
 <script>
 import Tile from '@/components/Tile.vue'
+import SponsorCard from '@/components/SponsorCard.vue'
+import WeRockData from '@/components/werockdata.js'
 
 export default {
-  components: { Tile },
+  name: 'sponsors',
+  components: {
+    Tile,
+    SponsorCard,
+  },
+  data: function() {
+    return {
+      sponsors: {},
+    }
+  },
+  computed: {
+    levels: function() {
+      console.log(this.sponsors)
+      return Object.keys(this.sponsors)
+    },
+  },
+  methods: {
+    fetchTeam: function() {
+      this.sponsors = WeRockData.sponsors()
+    },
+  },
+  mounted() {
+    this.fetchTeam()
+  },
 }
 </script>
