@@ -46,7 +46,7 @@ export default {
               id: id,
               name: name,
               image_path: headshotUrl,
-              job_title: jobTitle, 
+              job_title: jobTitle,
               company: companyName,
               linkedin: linkedIn,
               website: website,
