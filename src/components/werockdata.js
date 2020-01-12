@@ -64,6 +64,58 @@ export default {
         }
       )
 
-    return team;
-  }
+    return team
+  },
+
+  sponsors() {
+    let base = this.base()
+    let sponsors = {}
+
+    base('Sponsors')
+      .select({
+        view: 'Levels',
+      })
+      .eachPage(
+        function page(records, fetchNextPage) {
+          records.forEach(function(record) {
+            var id = record.get('Id')
+            var name = record.get('Name')
+            var level = record.get('SponsorshipLevel')
+            var website = record.get('Url')
+            var logoList = record.get('Logo')
+
+            var logoUrl = ''
+            if (logoList) {
+              var logo = logoList[0]
+
+              if (logo) {
+                logoUrl = logo.url
+              }
+            }
+
+            if (!sponsors[level]) {
+              sponsors[level] = []
+            }
+
+            sponsors[level].unshift({
+              id: id,
+              name: name,
+              image_path: logoUrl,
+              level: level,
+              website: website,
+            })
+          })
+
+          fetchNextPage()
+        },
+        function done(err) {
+          if (err) {
+            console.error(err)
+            return
+          }
+        }
+      )
+
+    return sponsors
+  },
 }
