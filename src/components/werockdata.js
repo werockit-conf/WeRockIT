@@ -85,6 +85,7 @@ export default {
             var id = record.get('Id')
             var name = record.get('Name')
             var headshotList = record.get('Headshot')
+            var talkTitle = record.get('TalkTitle')
             var jobTitle = record.get('JobTitle')
             var secondaryTitle = record.get('SecondaryTitle')
             var companyName = record.get('CompanyName')
@@ -92,6 +93,7 @@ export default {
             var website = record.get('Website')
             var twitter = record.get('Twitter')
             var isKeynote = record.get('IsKeynote')
+            var talkTag = record.get('Tags')
 
             var headshotUrl = ''
             if (headshotList) {
@@ -113,6 +115,8 @@ export default {
               website: website,
               twitter: twitter,
               isKeynote: isKeynote,
+              talkTag: talkTag,
+              talkTitle: talkTitle,
             })
           })
 

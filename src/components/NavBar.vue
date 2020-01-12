@@ -39,8 +39,8 @@
         >
           <NavBarLink name="home">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
-          <!-- <NavBarLink name="speakers">Speakers</NavBarLink>
-          <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
+          <NavBarLink name="speakers">Speakers</NavBarLink>
+          <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
           <NavBarLink name="sponsor">Sponsors</NavBarLink>
           <NavBarLink name="team">Team</NavBarLink>
           <a
