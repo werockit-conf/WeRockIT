@@ -1,18 +1,13 @@
 <template>
   <Tile bgcolor="bg-white" title="Keynotes" titleColor="text-wri-teal">
-    <div class="sm:flex sm:flex-col md:flex-no-wrap md:flex-row md:flex-wrap justify-center">
-      <PersonCard
+    <div class="sm:flex md:flex-wrap justify-center">
+      <SpeakerCard
         v-for="person in this.keynotes"
         :key="person.id"
         class="sm:w-2/4"
         :image_path="person.image_path"
         :name="person.name"
-        :job_title="person.job_title"
-        :secondary_title="person.secondary_title"
-        :company="person.company"
-        :linkedin="person.linkedin"
-        :website="person.website"
-        :twitter="person.twitter"
+        :talk_title="person.talkTitle"
       />
     </div>
   </Tile>
@@ -20,13 +15,13 @@
 
 <script>
 import Tile from '@/components/Tile.vue'
-import PersonCard from '@/components/PersonCard.vue'
+import SpeakerCard from '@/components/SpeakerCard.vue'
 
 export default {
   name: 'keynotes',
   components: {
     Tile,
-    PersonCard,
+    SpeakerCard,
   },
   props: {
     keynotes: {
