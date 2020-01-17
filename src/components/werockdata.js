@@ -1,3 +1,5 @@
+import { weRockDataStore } from '../main.js'
+
 export default {
   base() {
     const apikey = process.env.VUE_APP_AIRTABLE_API_KEY
@@ -61,6 +63,7 @@ export default {
             console.error(err)
             return
           }
+          weRockDataStore.team = team
         }
       )
 
@@ -69,7 +72,7 @@ export default {
 
   sponsors() {
     let base = this.base()
-    let sponsors = {}
+    let fetchedSponsors = []
 
     base('Sponsors')
       .select({
@@ -92,12 +95,11 @@ export default {
                 logoUrl = logo.url
               }
             }
-
-            if (!sponsors[level]) {
-              sponsors[level] = []
+            if (!fetchedSponsors[level]) {
+              fetchedSponsors[level] = []
             }
 
-            sponsors[level].unshift({
+            fetchedSponsors[level].unshift({
               id: id,
               name: name,
               image_path: logoUrl,
@@ -113,9 +115,8 @@ export default {
             console.error(err)
             return
           }
+          weRockDataStore.sponsors = fetchedSponsors
         }
       )
-
-    return sponsors
   },
 }

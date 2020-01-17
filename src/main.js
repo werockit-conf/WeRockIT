@@ -24,6 +24,17 @@ Vue.use(VueAnalytics, {
   },
 })
 
+const weRockDataStore = new Vue({
+  data: {
+    keynotes: [],
+    sponsors: [],
+    speakers: [],
+    team: [],
+  },
+})
+
+console.log(weRockDataStore.team)
+
 new Vue({
   router,
   render: h => h(App),
