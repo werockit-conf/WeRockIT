@@ -37,7 +37,7 @@
           :class="lgTextColor"
           class="text-wri-teal px-24 py-8 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
         >
-          <NavBarLink name="about">About</NavBarLink>
+          <NavBarLink name="home">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
           <!-- <NavBarLink name="speakers">Speakers</NavBarLink>
           <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
@@ -92,7 +92,6 @@ export default {
   },
   watch: {
     $route() {
-      console.log('Reacting to a route change in the nav bar via  watch.')
       if (this.open) {
         this.toggle()
       }
