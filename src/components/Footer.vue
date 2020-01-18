@@ -25,7 +25,7 @@
           ></font-awesome-icon
         ></a>
         <a href="https://www.facebook.com/werockitconf/" target="_blank"
-          ><font-awesome-icon 
+          ><font-awesome-icon
             class="m-5 flex-grow text-4xl text-wri-teal hover:text-wri-purple"
             :icon="['fab', 'facebook']"
           ></font-awesome-icon

@@ -2,7 +2,11 @@
   <div :class="displayClasses" class="z-50">
     <nav ref="logo" class="flex items-center justify-between flex-wrap">
       <div class="mx-auto inline float-left">
-        <img alt="WeRockIT Conference" src="../assets/WeRockIT_logo.png" class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8" />
+        <img
+          alt="WeRockIT Conference"
+          src="../assets/WeRockIT_logo.png"
+          class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
+        />
       </div>
       <div class="block lg:hidden mx-auto my-8 inline">
         <button
