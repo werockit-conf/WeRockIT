@@ -1,12 +1,17 @@
 <template>
-<Tile bgcolor="bg-white" title="" titleColor="text-wri-dark-blue">
-    <div class="sm:flex sm:flex-wrap sm:justify-center">
+<Tile bgcolor="bg-white" title="Bios" titleColor="text-wri-dark-blue">
+    <div class="flex flex-wrap justify-center">
       <Biography
         v-for="person in this.speakers"
         :key="person.id"
-        class="sm:w-2/4"
+        class="w-full"
         :image_path="person.image_path"
         :name="person.name"
+        :job_title="person.job_title"
+        :company="person.company"
+        :linkedin="person.linkedin"
+        :website="person.website"
+        :twitter="person.twitter"
         :talk_title="person.talkTitle"
         :biography="person.biography"
       />

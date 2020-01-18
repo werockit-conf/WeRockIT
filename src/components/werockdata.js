@@ -94,6 +94,7 @@ export default {
             var twitter = record.get('Twitter')
             var isKeynote = record.get('IsKeynote')
             var talkTag = record.get('Tags')
+            var biography = record.get('Bio')
 
             var headshotUrl = ''
             if (headshotList) {
@@ -117,6 +118,7 @@ export default {
               isKeynote: isKeynote,
               talkTag: talkTag,
               talkTitle: talkTitle,
+              biography: biography,
             })
           })
 
