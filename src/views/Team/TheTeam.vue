@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { globalStore } from '@/components/store.js'
 import Tile from '@/components/Tile.vue'
 import PersonCard from '@/components/PersonCard.vue'
 import WeRockData from '@/components/werockdata.js'
@@ -28,17 +29,13 @@ export default {
     Tile,
     PersonCard,
   },
-  data: function() {
-    return {
-      team: this.$root.team,
-    }
-  },
   computed: {
     sortedTeam: function() {
       this.sortTeam()
-      console.log('sorting the team')
-      console.log(this.team)
       return this.team
+    },
+    team: function() {
+      return globalStore.state.team
     },
   },
   methods: {

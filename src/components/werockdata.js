@@ -63,7 +63,7 @@ export default {
             console.error(err)
             return
           }
-          state.setTeam(team)
+          globalStore.state.team = team
         }
       )
   },
@@ -114,8 +114,6 @@ export default {
             return
           }
           globalStore.state.sponsors = sponsors
-          console.log('Updating the sponsors')
-          console.log(globalStore.state.sponsors)
         }
       )
   },
