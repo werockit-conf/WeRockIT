@@ -1,8 +1,14 @@
 <template>
   <div :class="displayClasses" class="z-50">
     <nav ref="logo" class="flex items-center justify-between flex-wrap">
-      <img alt="WeRockIT Conference" src="../assets/WeRockIT_logo.png" class="h-20 lg:h-24 mx-12 my-8" />
-      <div class="block lg:hidden mx-12 my-8">
+      <div class="mx-auto inline float-left">
+        <img
+          alt="WeRockIT Conference"
+          src="../assets/WeRockIT_logo.png"
+          class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
+        />
+      </div>
+      <div class="block lg:hidden mx-auto my-8 inline">
         <button
           @click="toggle"
           class="border-wri-teal flex items-center px-3 py-2 rounded bg-wri-dark-purple text-wri-teal hover:text-black"
