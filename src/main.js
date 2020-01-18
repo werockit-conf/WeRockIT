@@ -7,7 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { state } from '@/components/werockdata.js'
+import { globalStore } from '@/components/store.js'
 
 library.add(faTwitter, faInstagram, faLinkedin, faFacebook, faLink)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
@@ -25,10 +25,10 @@ Vue.use(VueAnalytics, {
   },
 })
 
-console.log(state)
+console.log(globalStore)
 
 new Vue({
   router,
-  data: state,
+  data: globalStore,
   render: h => h(App),
 }).$mount('#app')

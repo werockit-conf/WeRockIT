@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { globalStore } from '@/components/store.js'
 import Tile from '@/components/Tile.vue'
 import SponsorCard from '@/components/SponsorCard.vue'
 import WeRockData from '@/components/werockdata.js'
@@ -26,14 +27,12 @@ export default {
     Tile,
     SponsorCard,
   },
-  data: function() {
-    return {
-      sponsors: this.$root.sponsors,
-    }
-  },
   computed: {
     levels: function() {
       return Object.keys(this.sponsors)
+    },
+    sponsors: function() {
+      return globalStore.state.sponsors
     },
   },
   mounted() {

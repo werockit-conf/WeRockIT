@@ -1,19 +1,4 @@
-export const state = {
-  keynotes: [],
-  sponsors: [],
-  speakers: [],
-  team: [],
-
-  setTeam(team) {
-    console.log('Updating the team')
-    this.team = team
-    console.log(this.team)
-  },
-  setSponsors(sponsors) {
-    this.sponsors = sponsors
-    console.log(this.sponsors)
-  },
-}
+import { globalStore } from '@/components/store.js'
 
 export default {
   base() {
@@ -85,7 +70,7 @@ export default {
 
   sponsors() {
     let base = this.base()
-    let sponsors = []
+    let sponsors = {}
 
     base('Sponsors')
       .select({
@@ -128,9 +113,9 @@ export default {
             console.error(err)
             return
           }
-          state.setSponsors(sponsors)
+          globalStore.state.sponsors = sponsors
           console.log('Updating the sponsors')
-          console.log(state.sponsors)
+          console.log(globalStore.state.sponsors)
         }
       )
   },
