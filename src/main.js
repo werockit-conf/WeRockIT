@@ -25,8 +25,6 @@ Vue.use(VueAnalytics, {
   },
 })
 
-console.log(globalStore)
-
 new Vue({
   router,
   data: globalStore,

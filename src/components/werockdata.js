@@ -83,7 +83,7 @@ export default {
             var name = record.get('Name')
             var level = record.get('SponsorshipLevel')
             var website = record.get('Url')
-            var logoList = record.get('Logo')
+            var logoList = record.get('LogoImage')
 
             var logoUrl = ''
             if (logoList) {

@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <img class="inline-block w-1/3" :src="imagePath()" alt="image" />
+    <img class="inline-block w-1/3" :src="imagePath()" :alt="logoName()" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PersonCard',
+  name: 'SponsorCard',
   props: {
     image_path: {
       type: String,
@@ -22,8 +22,13 @@ export default {
     },
   },
   methods: {
+    logoName: function() {
+      return this.name + ' Logo'
+    },
     imagePath: function() {
-      if (this.image_path.startsWith('http')) {
+      if (this.image_path == '') {
+        return ''
+      } else if (this.image_path.startsWith('http')) {
         return this.image_path
       } else {
         return require('@/assets/' + this.image_path)
