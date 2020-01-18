@@ -41,12 +41,6 @@
             class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
             >Past Events</a
           >
-          <a
-            href="https://www.papercall.io/werockitconf2020"
-            target="_blank"
-            class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
-            >Speak</a
-          >
           <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
         </div>
       </div>
