@@ -1,9 +1,11 @@
 <template>
-  <div class="p-5 text-center  sm:max-w-sm">
-    <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
-    <div class="font-bold text-md">{{ name }}</div>
-    <div v-if="talk_title != ''" class="text-sm sm:text-lg">{{ talk_title }}</div>
-  </div>
+  <a v-if="anchorName != ''" :href="anchorPath()">
+    <div class="p-5 text-center  sm:max-w-sm">
+      <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
+      <div class="font-bold text-md">{{ name }}</div>
+      <div v-if="talk_title != ''" class="text-sm sm:text-lg">{{ talk_title }}</div>
+    </div>
+  </a>
 </template>
 
 <script>
@@ -46,6 +48,10 @@ export default {
       type: String,
       default: '',
     },
+    anchorName: {
+      type: String,
+      default: '',
+    },
   },
   methods: {
     imagePath: function() {
@@ -54,6 +60,9 @@ export default {
       } else {
         return require('@/assets/' + this.image_path)
       }
+    },
+    anchorPath: function() {
+      return '#' + this.anchorName
     },
   },
 }
