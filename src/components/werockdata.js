@@ -1,4 +1,15 @@
-import { weRockDataStore } from '../main.js'
+export const state = {
+  keynotes: [],
+  sponsors: [],
+  speakers: [],
+  team: [],
+
+  setTeam(team) {
+    console.log('Updating the team')
+    state.team = team
+    console.log(state.team)
+  },
+}
 
 export default {
   base() {
@@ -63,7 +74,7 @@ export default {
             console.error(err)
             return
           }
-          weRockDataStore.team = team
+          state.setTeam(team)
         }
       )
 
@@ -72,7 +83,7 @@ export default {
 
   sponsors() {
     let base = this.base()
-    let fetchedSponsors = []
+    let sponsors = []
 
     base('Sponsors')
       .select({
@@ -95,11 +106,11 @@ export default {
                 logoUrl = logo.url
               }
             }
-            if (!fetchedSponsors[level]) {
-              fetchedSponsors[level] = []
+            if (!sponsors[level]) {
+              sponsors[level] = []
             }
 
-            fetchedSponsors[level].unshift({
+            sponsors[level].unshift({
               id: id,
               name: name,
               image_path: logoUrl,
@@ -115,7 +126,9 @@ export default {
             console.error(err)
             return
           }
-          weRockDataStore.sponsors = fetchedSponsors
+          state.sponsors = sponsors
+          console.log('Updating the sponsors')
+          console.log(state.sponsors)
         }
       )
   },

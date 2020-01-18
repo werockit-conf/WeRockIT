@@ -7,6 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { state } from '@/components/werockdata.js'
 
 library.add(faTwitter, faInstagram, faLinkedin, faFacebook, faLink)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
@@ -24,18 +25,10 @@ Vue.use(VueAnalytics, {
   },
 })
 
-const weRockDataStore = new Vue({
-  data: {
-    keynotes: [],
-    sponsors: [],
-    speakers: [],
-    team: [],
-  },
-})
-
-console.log(weRockDataStore.team)
+console.log(state)
 
 new Vue({
   router,
+  data: state,
   render: h => h(App),
 }).$mount('#app')

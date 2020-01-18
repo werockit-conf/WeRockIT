@@ -19,7 +19,6 @@
 import Tile from '@/components/Tile.vue'
 import SponsorCard from '@/components/SponsorCard.vue'
 import WeRockData from '@/components/werockdata.js'
-import { weRockDataStore } from '../../main.js'
 
 export default {
   name: 'sponsors',
@@ -29,7 +28,7 @@ export default {
   },
   data: function() {
     return {
-      sponsors: weRockDataStore.sponsors,
+      sponsors: this.$root.sponsors,
     }
   },
   computed: {
@@ -37,13 +36,8 @@ export default {
       return Object.keys(this.sponsors)
     },
   },
-  methods: {
-    fetchSponsors: function() {
-      WeRockData.sponsors()
-    },
-  },
   mounted() {
-    this.fetchSponsors()
+    WeRockData.sponsors()
   },
 }
 </script>

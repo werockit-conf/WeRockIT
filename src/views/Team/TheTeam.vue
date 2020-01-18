@@ -21,7 +21,6 @@
 import Tile from '@/components/Tile.vue'
 import PersonCard from '@/components/PersonCard.vue'
 import WeRockData from '@/components/werockdata.js'
-import { weRockDataStore } from '../../main.js'
 
 export default {
   name: 'the-team',
@@ -31,12 +30,14 @@ export default {
   },
   data: function() {
     return {
-      team: weRockDataStore.team,
+      team: this.$root.team,
     }
   },
   computed: {
     sortedTeam: function() {
       this.sortTeam()
+      console.log('sorting the team')
+      console.log(this.team)
       return this.team
     },
   },
@@ -46,13 +47,9 @@ export default {
         return a.name > b.name ? 1 : -1
       })
     },
-    fetchTeam: function() {
-      console.log(weRockDataStore)
-      WeRockData.team()
-    },
   },
   mounted() {
-    this.fetchTeam()
+    WeRockData.team()
   },
 }
 </script>
