@@ -14,6 +14,14 @@
         <h3 class="uppercase leading-none text-5xl lg:text-6xl">Huntsville, AL</h3>
       </div>
     </div>
+    <div class="container mx-auto text-center p-8">
+      <a
+        href="https://www.tickettailor.com/events/werockitconf/268601"
+        target="_blank"
+        class="uppercase font-bold mt-4 font-montserrat inline p-2 px-6 bg-wri-teal rounded-full hover:bg-blue-300  lg:text-3xl md:text-3xl sm:text-2xl"
+        >Get Tickets</a
+      >
+    </div>
   </div>
 </template>
 
