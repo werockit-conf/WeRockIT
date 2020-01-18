@@ -6,8 +6,12 @@ export const state = {
 
   setTeam(team) {
     console.log('Updating the team')
-    state.team = team
-    console.log(state.team)
+    this.team = team
+    console.log(this.team)
+  },
+  setSponsors(sponsors) {
+    this.sponsors = sponsors
+    console.log(this.sponsors)
   },
 }
 
@@ -77,8 +81,6 @@ export default {
           state.setTeam(team)
         }
       )
-
-    return team
   },
 
   sponsors() {
@@ -126,7 +128,7 @@ export default {
             console.error(err)
             return
           }
-          state.sponsors = sponsors
+          state.setSponsors(sponsors)
           console.log('Updating the sponsors')
           console.log(state.sponsors)
         }
