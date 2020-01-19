@@ -2,11 +2,13 @@
   <div :class="displayClasses" class="z-50">
     <nav ref="logo" class="flex items-center justify-between flex-wrap">
       <div class="mx-auto inline float-left">
-        <img
-          alt="WeRockIT Conference"
-          src="../assets/WeRockIT_logo.png"
-          class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
-        />
+        <NavBarLogo name="home">
+          <img
+            alt="WeRockIT Conference"
+            src="../assets/WeRockIT_logo.png"
+            class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
+          />
+        </NavBarLogo>
       </div>
       <div class="block lg:hidden mx-auto my-8 inline">
         <button
@@ -56,9 +58,10 @@
 
 <script>
 import NavBarLink from './NavBarLink.vue'
+import NavBarLogo from './NavBarLogo.vue'
 
 export default {
-  components: { NavBarLink },
+  components: { NavBarLink, NavBarLogo },
   data: function() {
     return {
       open: false,
@@ -85,6 +88,13 @@ export default {
       let scrolled = window.scrollY > this.navbarHeight
       this.bgcolor = scrolled ? 'bg-white' : 'bg-transparent'
       this.textColor = scrolled ? 'text-black' : 'text-white'
+    },
+  },
+  watch: {
+    $route() {
+      if (this.open) {
+        this.toggle()
+      }
     },
   },
   mounted() {
