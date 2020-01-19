@@ -50,6 +50,7 @@
             >Past Events</a
           >
           <a
+            v-if="showTicketSales"
             href="https://www.tickettailor.com/events/werockitconf/268601"
             target="_blank"
             class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
@@ -84,6 +85,9 @@ export default {
     },
     lgTextColor() {
       return 'lg:' + this.textColor
+    },
+    showTicketSales() {
+      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
     },
   },
   methods: {

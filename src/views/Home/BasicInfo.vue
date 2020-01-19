@@ -14,7 +14,7 @@
         <h3 class="uppercase leading-none text-5xl lg:text-6xl">Huntsville, AL</h3>
       </div>
     </div>
-    <div class="container mx-auto text-center p-8">
+    <div class="container mx-auto text-center p-8" v-if="showTicketSales">
       <a
         href="https://www.tickettailor.com/events/werockitconf/268601"
         target="_blank"
@@ -24,6 +24,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    showTicketSales() {
+      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
+    },
+  },
+}
+</script>
 
 <style scoped>
 .bg-wri-image {
