@@ -1,8 +1,16 @@
 <template>
   <div :class="displayClasses" class="z-50">
     <nav ref="logo" class="flex items-center justify-between flex-wrap">
-      <img alt="WeRockIT Conference" src="../assets/WeRockIT_logo.png" class="h-20 lg:h-24 mx-12 my-8" />
-      <div class="block lg:hidden mx-12 my-8">
+      <div class="mx-auto inline float-left">
+        <NavBarLogo name="home">
+          <img
+            alt="WeRockIT Conference"
+            src="../assets/WeRockIT_logo.png"
+            class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
+          />
+        </NavBarLogo>
+      </div>
+      <div class="block lg:hidden mx-auto my-8 inline">
         <button
           @click="toggle"
           class="border-wri-teal flex items-center px-3 py-2 rounded bg-wri-dark-purple text-wri-teal hover:text-black"
@@ -41,6 +49,16 @@
             class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
             >Past Events</a
           >
+<<<<<<< HEAD
+=======
+          <a
+            v-if="showTicketSales"
+            href="https://www.tickettailor.com/events/werockitconf/268601"
+            target="_blank"
+            class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
+            >Tickets</a
+          >
+>>>>>>> 43ccb78fe4a57ffef5b25631e23bb8c664f6eae2
           <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
         </div>
       </div>
@@ -50,9 +68,10 @@
 
 <script>
 import NavBarLink from './NavBarLink.vue'
+import NavBarLogo from './NavBarLogo.vue'
 
 export default {
-  components: { NavBarLink },
+  components: { NavBarLink, NavBarLogo },
   data: function() {
     return {
       open: false,
@@ -70,6 +89,9 @@ export default {
     lgTextColor() {
       return 'lg:' + this.textColor
     },
+    showTicketSales() {
+      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
+    },
   },
   methods: {
     toggle() {
@@ -79,6 +101,13 @@ export default {
       let scrolled = window.scrollY > this.navbarHeight
       this.bgcolor = scrolled ? 'bg-white' : 'bg-transparent'
       this.textColor = scrolled ? 'text-black' : 'text-white'
+    },
+  },
+  watch: {
+    $route() {
+      if (this.open) {
+        this.toggle()
+      }
     },
   },
   mounted() {

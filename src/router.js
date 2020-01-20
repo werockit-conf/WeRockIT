@@ -7,6 +7,7 @@ import Speakers from './views/Speakers.vue'
 import Sponsor from './views/Sponsor.vue'
 import Team from './views/Team.vue'
 import Travel from './views/Travel.vue'
+import NotFound from './views/404.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/team',
       name: 'team',
       component: Team,
+    },
+    {
+      path: '*',
+      name: 'notfound',
+      component: NotFound,
     },
     // {
     //   path: '/about',

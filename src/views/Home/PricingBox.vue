@@ -8,14 +8,14 @@
       <div>All Track Sessions</div>
       <div>Workshops</div>
       <div class="pb-3">Access</div>
-      <a :href="link" class="bg-wri-dark-blue rounded-lg p-3">Available Soon</a>
+      <a :href="link" class="bg-wri-dark-blue rounded-lg p-3">{{ button }}</a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['name', 'price', 'link'],
+  props: ['name', 'price', 'link', 'button'],
 }
 </script>
 

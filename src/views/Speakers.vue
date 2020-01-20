@@ -3,8 +3,32 @@
     <SpeakersHeader></SpeakersHeader>
     <TheSpeakers :speakers="this.speakers"></TheSpeakers>
     <Biographies :speakers="this.speakers"></Biographies>
+<<<<<<< HEAD
+=======
+    <button class="floatybutton">fdsfsd</button>
+>>>>>>> 43ccb78fe4a57ffef5b25631e23bb8c664f6eae2
   </div>
 </template>
+
+
+<style scoped>
+.floatybutton {
+  @apply fixed;
+  /* @apply hidden; */
+  @apply text-center;
+  @apply bottom-0;
+  @apply right-0;
+  @apply z-50;
+  @apply text-base;
+  @apply border-0;
+  @apply outline-none;
+  @apply bg-red-600;
+  @apply text-white;
+  @apply cursor-pointer;
+  @apply rounded-sm;
+  @apply p-10;
+}
+</style>
 
 <script>
 import SpeakersHeader from './Speakers/SpeakersHeader.vue'
