@@ -55,22 +55,24 @@ export default new Router({
       name: 'notfound',
       component: NotFound,
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-    // },
+    {
+      path: '/',
+      hash: '#about',
+      name: 'about',
+      component: Home,
+    },
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior: function(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     }
+
     if (to.hash) {
-      return { selector: to.hash }
+      return {
+        selector: to.hash,
+      }
     }
+
     return { x: 0, y: 0 }
   },
 })

@@ -1,11 +1,11 @@
 <template>
-  <a v-if="anchorName != ''" :href="anchorPath()">
+  <router-link v-if="anchorName != ''" :to="anchorPath()" replace>
     <div class="p-5 text-center  sm:max-w-sm">
       <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
       <div class="font-bold text-md">{{ name }}</div>
       <div v-if="talk_title != ''" class="text-sm sm:text-lg">{{ talk_title }}</div>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>

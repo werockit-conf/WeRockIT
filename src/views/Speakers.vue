@@ -1,32 +1,21 @@
 <template>
   <div class="text-wri-blue">
     <SpeakersHeader></SpeakersHeader>
-    <TheSpeakers :speakers="this.speakers"></TheSpeakers>
-    <Biographies :speakers="this.speakers"></Biographies>
-<<<<<<< HEAD
-=======
-    <button class="floatybutton">fdsfsd</button>
->>>>>>> 337d5410e55c2bb01db5bfff39b7aae6663c7789
+    <TheSpeakers :speakers="this.speakers" id="top"></TheSpeakers>
+    <Biographies ref="biographysection" :speakers="this.speakers"></Biographies>
+    <button v-on:click="backToTop" :class="showButtonStyle" class="floatybutton">
+      <font-awesome-icon class="m-5 flex-grow text-6xl text-wri-teal" :icon="['fa', 'caret-up']"></font-awesome-icon>
+    </button>
   </div>
 </template>
-
 
 <style scoped>
 .floatybutton {
   @apply fixed;
-  /* @apply hidden; */
-  @apply text-center;
   @apply bottom-0;
   @apply right-0;
   @apply z-50;
-  @apply text-base;
-  @apply border-0;
-  @apply outline-none;
-  @apply bg-red-600;
-  @apply text-white;
   @apply cursor-pointer;
-  @apply rounded-sm;
-  @apply p-10;
 }
 </style>
 
@@ -46,12 +35,16 @@ export default {
   data: function() {
     return {
       speakers: [],
+      showButton: false,
     }
   },
   computed: {
     sortedTeam: function() {
       this.sortTeam()
       return this.speakers
+    },
+    showButtonStyle: function() {
+      return this.showButton ? '' : 'hidden'
     },
   },
   methods: {
@@ -63,9 +56,17 @@ export default {
     fetchTeam: function() {
       this.speakers = WeRockData.speakers()
     },
+    updateScroll() {
+      this.showButton = window.scrollY > this.biographyHeight
+    },
+    backToTop: function() {
+      this.$router.replace('speakers#top')
+    },
   },
   mounted() {
     this.fetchTeam()
+    window.addEventListener('scroll', this.updateScroll)
+    this.biographyHeight = this.$refs.biographysection.$el.offsetTop
   },
 }
 </script>
