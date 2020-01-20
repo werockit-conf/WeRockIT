@@ -31,7 +31,7 @@
           ></font-awesome-icon
         ></a>
       </div>
-      <div class="text-center">Copyright © 2020 WeRockIT conf</div>
+      <div class="text-center"> <a href="https://2019.werockitconf.com/">View Past Events</a><br />Copyright © 2020 WeRockIT Conf</div>
     </div>
   </div>
 </template>

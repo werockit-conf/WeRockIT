@@ -1,12 +1,12 @@
 <template>
   <div :class="displayClasses" class="z-50">
-    <nav ref="logo" class="flex items-center justify-between flex-wrap">
+    <nav ref="logo" class="flex items-center justify-between flex-wrap lg:flex-no-wrap">
       <div class="mx-auto inline float-left">
         <NavBarLogo name="home">
-          <img alt="WeRockIT Conference" :src="logoPath" class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8" />
+          <img alt="WeRockIT Conference" :src="logoPath" class="h-16 sm:float-left lg:mx-12" />
         </NavBarLogo>
       </div>
-      <div class="block lg:hidden mx-auto my-8 inline">
+      <div class="block lg:hidden mx-auto my-4 inline">
         <button
           @click="toggle"
           class="border-wri-teal flex items-center px-3 py-2 rounded bg-wri-dark-purple text-wri-teal hover:text-black"
@@ -31,7 +31,7 @@
       <div :class="open ? 'block' : 'hidden'" class="w-full lg:w-auto order-first lg:order-last lg:block lg:flex-grow">
         <div
           :class="lgTextColor"
-          class="text-wri-teal px-24 py-8 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
+          class="text-wri-teal px-24 py-8 lg:py-5 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
         >
           <NavBarLink name="about" hash="#about">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
@@ -40,21 +40,12 @@
           <NavBarLink name="sponsor">Sponsors</NavBarLink>
           <NavBarLink name="team">Team</NavBarLink>
           <a
-            href="https://2019.werockitconf.com"
-            target="_blank"
-            class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
-            >Past Events</a
-          >
-<<<<<<< HEAD
-=======
-          <a
             v-if="showTicketSales"
             href="https://www.tickettailor.com/events/werockitconf/268601"
             target="_blank"
             class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
             >Tickets</a
           >
->>>>>>> 43ccb78fe4a57ffef5b25631e23bb8c664f6eae2
           <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
         </div>
       </div>
@@ -86,13 +77,11 @@ export default {
     lgTextColor() {
       return 'lg:' + this.textColor
     },
-<<<<<<< HEAD
     showTicketSales() {
       return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
-=======
+    },
     logoPath() {
       return require('../assets/' + this.logoAsset)
->>>>>>> 13770d3... Got basic functionality working for the to top button; updated the logo in top left to be a white on the headers and black when header turns white (needed t0 add package to support this with webpack); the #about anchor on the main page sort of works;  TODO: Need to resolve anchors going to show beyond the header and not the top top of the the div
     },
   },
   methods: {
