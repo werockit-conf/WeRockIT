@@ -35,7 +35,7 @@
         >
           <NavBarLink name="about" hash="#about">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
-          <NavBarLink name="speakers">Speakers</NavBarLink>
+          <NavBarLink v-if="showTicketSales" name="speakers">Speakers</NavBarLink>
           <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
           <NavBarLink name="sponsor">Sponsors</NavBarLink>
           <NavBarLink name="team">Team</NavBarLink>

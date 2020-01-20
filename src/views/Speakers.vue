@@ -3,14 +3,14 @@
     <SpeakersHeader></SpeakersHeader>
     <TheSpeakers :speakers="this.speakers" id="top"></TheSpeakers>
     <Biographies ref="biographysection" :speakers="this.speakers"></Biographies>
-    <button v-on:click="backToTop" :class="showButtonStyle" class="floatybutton">
+    <button v-on:click="backToTop" :class="showButtonStyle" class="floaty-button">
       <font-awesome-icon class="m-5 flex-grow text-6xl text-wri-teal" :icon="['fa', 'caret-up']"></font-awesome-icon>
     </button>
   </div>
 </template>
 
 <style scoped>
-.floatybutton {
+.floaty-button {
   @apply fixed;
   @apply bottom-0;
   @apply right-0;
