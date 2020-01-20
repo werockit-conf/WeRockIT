@@ -3,11 +3,7 @@
     <nav ref="logo" class="flex items-center justify-between flex-wrap">
       <div class="mx-auto inline float-left">
         <NavBarLogo name="home">
-          <img
-            alt="WeRockIT Conference"
-            src="../assets/WeRockIT_logo.png"
-            class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
-          />
+          <img alt="WeRockIT Conference" :src="logoPath" class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8" />
         </NavBarLogo>
       </div>
       <div class="block lg:hidden mx-auto my-8 inline">
@@ -37,7 +33,7 @@
           :class="lgTextColor"
           class="text-wri-teal px-24 py-8 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
         >
-          <NavBarLink name="home">About</NavBarLink>
+          <NavBarLink name="about" hash="#about">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
           <NavBarLink name="speakers">Speakers</NavBarLink>
           <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
@@ -79,6 +75,7 @@ export default {
       textColor: 'text-white',
       fixedStyles: 'fixed top-0 left-0 right-0',
       stickyStyles: 'sticky top-0 left-0 right-0',
+      logoAsset: 'WeRockIT_white_logo.png',
     }
   },
   computed: {
@@ -89,8 +86,13 @@ export default {
     lgTextColor() {
       return 'lg:' + this.textColor
     },
+<<<<<<< HEAD
     showTicketSales() {
       return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
+=======
+    logoPath() {
+      return require('../assets/' + this.logoAsset)
+>>>>>>> 13770d3... Got basic functionality working for the to top button; updated the logo in top left to be a white on the headers and black when header turns white (needed t0 add package to support this with webpack); the #about anchor on the main page sort of works;  TODO: Need to resolve anchors going to show beyond the header and not the top top of the the div
     },
   },
   methods: {
@@ -101,6 +103,7 @@ export default {
       let scrolled = window.scrollY > this.navbarHeight
       this.bgcolor = scrolled ? 'bg-white' : 'bg-transparent'
       this.textColor = scrolled ? 'text-black' : 'text-white'
+      this.logoAsset = scrolled ? 'WeRockIT_black_logo.png' : 'WeRockIT_white_logo.png'
     },
   },
   watch: {

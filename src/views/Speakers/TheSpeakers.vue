@@ -4,7 +4,7 @@
       <SpeakerCard
         v-for="person in this.speakers"
         :key="person.id"
-        class="sm:w-2/4"
+        class="sm:w-1/5"
         :image_path="person.image_path"
         :name="person.name"
         :talk_title="person.talkTitle"
