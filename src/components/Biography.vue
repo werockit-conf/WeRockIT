@@ -35,9 +35,9 @@
       <div class="md:w-1/4 mr-5">
         <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
       </div>
-      <div class="overflow-hidden md:w-1/2 lg:w-1/2 xl:w-1/2">
+      <div class="overflow-hidden md:w-4/6">
         <span class="text-center md:text-left">
-          <div class="text-2xl font-bold tracking-tighter md:mt-5 tracking-normal">{{ speakerName }}</div>
+          <div class="text-2xl font-bold tracking-tighter md:mt-3 tracking-normal">{{ speakerName }}</div>
           <div v-if="job_title != ''" class="text-lg font-medium">{{ job_title }}</div>
           <div v-if="secondary_title != ''" class="text-lg font-medium">{{ secondary_title }}</div>
           <div v-if="company != ''" class="text-lg font-medium">{{ company }}</div>
