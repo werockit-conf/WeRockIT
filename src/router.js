@@ -68,9 +68,11 @@ export default new Router({
     }
 
     if (to.hash) {
-      return {
-        selector: to.hash,
-      }
+      let position = {}
+      position.selector = to.hash
+      position.offset = { y: document.querySelector('nav').offsetHeight }
+
+      return position
     }
 
     return { x: 0, y: 0 }
