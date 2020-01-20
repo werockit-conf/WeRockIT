@@ -1,6 +1,6 @@
 <template>
   <div :class="displayClasses" class="z-50">
-    <nav ref="logo" class="flex items-center justify-between flex-wrap">
+    <nav ref="logo" class="flex items-center justify-between flex-wrap lg:flex-no-wrap">
       <div class="mx-auto inline float-left">
         <NavBarLogo name="home">
           <img alt="WeRockIT Conference" :src="logoPath" class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8" />
@@ -42,7 +42,7 @@
           <a
             href="https://2019.werockitconf.com"
             target="_blank"
-            class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
+            class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200 whitespace-no-wrap"
             >Past Events</a
           >
 <<<<<<< HEAD
