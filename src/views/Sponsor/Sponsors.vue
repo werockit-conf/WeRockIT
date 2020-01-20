@@ -8,6 +8,11 @@
     <div class="flex flex-wrap justify-center">
       <img class="inline-block" src="@/assets/AdtranLogo.png" />
     </div>
+    <br />
+    <span class="text-wri-teal text-7xl font-bebas">Silver</span>
+    <div class="flex flex-wrap justify-center">
+      <img class="inline-block" src="@/assets/simple_helix.png" />
+    </div>
   </Tile>
 </template>
 

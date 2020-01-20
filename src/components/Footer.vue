@@ -24,8 +24,14 @@
             :icon="['fab', 'instagram']"
           ></font-awesome-icon
         ></a>
+        <a href="https://www.facebook.com/werockitconf/" target="_blank"
+          ><font-awesome-icon
+            class="m-5 flex-grow text-4xl text-wri-teal hover:text-wri-purple"
+            :icon="['fab', 'facebook']"
+          ></font-awesome-icon
+        ></a>
       </div>
-      <div class="text-center">Copyright © 2019 WeRockIT conf</div>
+      <div class="text-center">Copyright © 2020 WeRockIT conf</div>
     </div>
   </div>
 </template>

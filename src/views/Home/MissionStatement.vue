@@ -1,5 +1,5 @@
 <template>
-  <Tile title bgcolor="bg-wri-blue">
+  <Tile title bgcolor="bg-wri-blue" id="about">
     <!-- <div class="container mx-auto bg-wri-blue p-20 text-center"> -->
     <div class="mx-auto text-center text-xl pb-12 text-white">
       <div>
