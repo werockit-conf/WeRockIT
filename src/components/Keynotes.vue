@@ -29,47 +29,5 @@ export default {
       required: true,
     },
   },
-  // data: function() {
-  //   return {
-  //     keynotes: [],
-  //   }
-  // },
-  // methods: {
-  //   fetchKeynotes: function() {
-  //     this.keynotes = [
-  //       {
-  //         id: 1213,
-  //         name: 'Toni',
-  //         image_path: 'https://2019.werockitconf.com/img/speakers/DayniseJoseph.jpeg',
-  //         job_title: 'title',
-  //         company: 'Toyota Mazda',
-  //         website: 'http://www.werockitconf.com',
-  //         twitter: 'toniisgreat',
-  //       },
-  //       {
-  //         id: 12321,
-  //         name: 'Chris',
-  //         image_path: 'https://2019.werockitconf.com/img/speakers/Katreena.jpg',
-  //         job_title: 'title',
-  //         company: 'University of Alabama In Tuscaloosa',
-  //         website: 'http://www.werockitconf.com',
-  //         twitter: 'chrisisalso',
-  //       },
-  //       {
-  //         id: 12321,
-  //         name: 'Chris',
-  //         image_path: 'https://2019.werockitconf.com/img/speakers/Katreena.jpg',
-  //         job_title: 'title',
-  //         company: 'University of Alabama In Tuscaloosa',
-  //         website: 'http://www.werockitconf.com',
-  //         linkedin: 'fdsfds',
-  //         twitter: 'chrisisalso',
-  //       },
-  //     ]
-  //   },
-  // },
-  // mounted() {
-  //   this.fetchKeynotes()
-  // },
 }
 </script>
