@@ -20,6 +20,7 @@
 </style>
 
 <script>
+import { globalStore } from '@/components/store.js'
 import SpeakersHeader from './Speakers/SpeakersHeader.vue'
 import TheSpeakers from './Speakers/TheSpeakers.vue'
 import Biographies from './Speakers/Biographies.vue'
@@ -34,13 +35,15 @@ export default {
   },
   data: function() {
     return {
-      speakers: [],
       showButton: false,
     }
   },
   computed: {
-    sortedTeam: function() {
-      this.sortTeam()
+    speakers: function() {
+      return globalStore.state.speakers
+    },
+    sortedSpeakers: function() {
+      this.sortSpeakers()
       return this.speakers
     },
     showButtonStyle: function() {
@@ -53,9 +56,6 @@ export default {
         return a.name > b.name ? 1 : -1
       })
     },
-    fetchTeam: function() {
-      this.speakers = WeRockData.speakers()
-    },
     updateScroll() {
       this.showButton = window.scrollY > this.biographyHeight
     },
@@ -64,7 +64,7 @@ export default {
     },
   },
   mounted() {
-    this.fetchTeam()
+    WeRockData.speakers()
     window.addEventListener('scroll', this.updateScroll)
     this.biographyHeight = this.$refs.biographysection.$el.offsetTop
   },

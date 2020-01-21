@@ -3,7 +3,7 @@
     <BasicInfo></BasicInfo>
     <MissionStatement></MissionStatement>
     <TrackTopics></TrackTopics>
-    <Keynotes v-bind:keynotes="this.keynotes"></Keynotes>
+    <Keynotes v-if="showSpeakerPage"></Keynotes>
     <Pricing></Pricing>
     <Updates></Updates>
   </div>
@@ -16,7 +16,6 @@ import Pricing from './Home/Pricing.vue'
 import TrackTopics from './Home/TrackTopics.vue'
 import Updates from './Home/Updates.vue'
 import Keynotes from '@/components/Keynotes.vue'
-import WeRockData from '@/components/werockdata.js'
 
 export default {
   components: {
@@ -27,19 +26,10 @@ export default {
     TrackTopics,
     Updates,
   },
-  data: function() {
-    return {
-      keynotes: [],
-    }
-  },
-  methods: {
-    fetchKeynotes: function() {
-      let justKeynotes = true
-      this.keynotes = WeRockData.speakers(justKeynotes)
+  computed: {
+    showSpeakerPage() {
+      return process.env.VUE_APP_UNLOCK_SPEAKERS == 'TRUE'
     },
-  },
-  mounted() {
-    this.fetchKeynotes()
   },
 }
 </script>

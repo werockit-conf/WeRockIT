@@ -35,7 +35,7 @@
         >
           <NavBarLink name="about" hash="#about">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
-          <NavBarLink v-if="showTicketSales" name="speakers">Speakers</NavBarLink>
+          <NavBarLink v-if="showSpeakerPage" name="speakers">Speakers</NavBarLink>
           <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
           <NavBarLink name="sponsor">Sponsors</NavBarLink>
           <NavBarLink name="team">Team</NavBarLink>
@@ -46,7 +46,6 @@
             class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
             >Tickets</a
           >
-          <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
         </div>
       </div>
     </nav>
@@ -79,6 +78,9 @@ export default {
     },
     showTicketSales() {
       return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
+    },
+    showSpeakerPage() {
+      return process.env.VUE_APP_UNLOCK_SPEAKERS == 'TRUE'
     },
     logoPath() {
       return require('../assets/' + this.logoAsset)

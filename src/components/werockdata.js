@@ -1,3 +1,5 @@
+import { globalStore } from '@/components/store.js'
+
 export default {
   base() {
     const apikey = process.env.VUE_APP_AIRTABLE_API_KEY
@@ -75,6 +77,9 @@ export default {
       view = 'Keynotes'
     }
 
+    let that = this
+    that.justKeynotes = justKeynotes
+
     base('Speakers')
       .select({
         view: view,
@@ -130,9 +135,12 @@ export default {
             console.error(err)
             return
           }
+          if (that.justKeynotes) {
+            globalStore.state.keynotes = speakers
+          } else {
+            globalStore.state.speakers = speakers
+          }
         }
       )
-
-    return speakers
   },
 }
