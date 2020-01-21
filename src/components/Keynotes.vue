@@ -4,10 +4,11 @@
       <SpeakerCard
         v-for="person in keynotes"
         :key="person.id"
-        class="sm:w-2/4"
+        class="sm:w-1/3"
         :image_path="person.image_path"
         :name="person.name"
         :talk_title="person.talkTitle"
+        :anchorName="person.anchorName"
       />
     </div>
   </Tile>
@@ -27,7 +28,6 @@ export default {
   },
   computed: {
     keynotes: function() {
-      console.log(globalStore.state.keynotes)
       return globalStore.state.keynotes
     },
   },

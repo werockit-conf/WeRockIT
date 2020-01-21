@@ -65,6 +65,7 @@ export default {
   },
   mounted() {
     WeRockData.speakers()
+
     window.addEventListener('scroll', this.updateScroll)
     this.biographyHeight = this.$refs.biographysection.$el.offsetTop
   },
