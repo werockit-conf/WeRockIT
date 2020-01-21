@@ -9,6 +9,7 @@
         :name="person.name"
         :talk_title="person.talkTitle"
         :anchorName="person.anchorName"
+        :talk_tag="person.talkTag"
       />
     </div>
   </Tile>

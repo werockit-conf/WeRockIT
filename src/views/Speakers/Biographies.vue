@@ -13,6 +13,7 @@
         :website="person.website"
         :twitter="person.twitter"
         :talk_title="person.talkTitle"
+        :talk_tag="person.talkTag"
         :biography="person.biography"
         :id="person.anchorName"
       />

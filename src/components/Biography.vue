@@ -10,6 +10,7 @@
         <div v-if="secondary_title != ''" class="text-lg font-medium">{{ secondary_title }}</div>
         <div v-if="company != ''" class="text-lg font-medium">{{ company }}</div>
         <div class="mt-3 mb-2 text-lg font-bold">{{ talk_title }}</div>
+        <TalkTitle :talk_tag="this.talk_tag"></TalkTitle>
       </span>
       <div v-if="biography != ''" class="text-sm tracking-wide">{{ biography }}</div>
     </div>
@@ -17,8 +18,13 @@
 </template>
 
 <script>
+import TalkTitle from '@/components/TalkTitle.vue'
+
 export default {
   name: 'Biography',
+  components: {
+    TalkTitle,
+  },
   props: {
     image_path: {
       type: String,
@@ -33,6 +39,10 @@ export default {
       default: '',
     },
     job_title: {
+      type: String,
+      default: '',
+    },
+    talk_tag: {
       type: String,
       default: '',
     },
