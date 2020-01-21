@@ -10,6 +10,9 @@
         :talk_title="person.talkTitle"
         :anchorName="person.anchorName"
         :talk_tag="person.talkTag"
+        :linkedin="person.linkedin"
+        :website="person.website"
+        :twitter="person.twitter"
       />
     </div>
   </Tile>
