@@ -8,7 +8,8 @@
         :image_path="person.image_path"
         :name="person.name"
         :talk_title="person.talkTitle"
-        :anchorName="person.anchorName"
+        :anchor_name="person.anchorName"
+        :allow_route_history="true"
       />
     </div>
   </Tile>

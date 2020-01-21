@@ -124,7 +124,7 @@ export default {
               talkTag: talkTag,
               talkTitle: talkTitle,
               biography: biography,
-              anchorName: name.replace(/\s/g, ''),
+              anchorName: name.replace(/\s/g, '').replace(/\./g, ''),
             })
           })
 

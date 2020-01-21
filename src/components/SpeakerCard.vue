@@ -1,22 +1,39 @@
 <template>
-  <router-link v-if="anchorName != ''" :to="anchorPath()" replace>
-    <div class="p-5 text-center max-w-sm">
-      <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
-      <div class="font-bold text-md">{{ name }}</div>
-      <TalkTitle v-if="talk_title != ''" :talk_tag="this.talk_tag">
-        {{ talk_title }}
-      </TalkTitle>
-    </div>
-  </router-link>
+  <div>
+    <router-link v-if="this.maybeRenderWithoutRouteHistory" :to="anchorPath()" replace>
+      <SpeakerCardContent
+        :name="this.name"
+        :talk_title="this.talk_title"
+        :talk_tag="this.talk_tag"
+        :image_path="this.image_path"
+      />
+    </router-link>
+    <router-link v-else-if="this.maybeRenderWithRouteHistory" :to="anchorPath()">
+      <SpeakerCardContent
+        :name="this.name"
+        :talk_title="this.talk_title"
+        :talk_tag="this.talk_tag"
+        :image_path="this.image_path"
+      />
+    </router-link>
+    <router-link v-else to="/#">
+      <SpeakerCardContent
+        :name="this.name"
+        :talk_title="this.talk_title"
+        :talk_tag="this.talk_tag"
+        :image_path="this.image_path"
+      />
+    </router-link>
+  </div>
 </template>
 
 <script>
-import TalkTitle from '@/components/TalkTitle.vue'
+import SpeakerCardContent from '@/components/SpeakerCardContent.vue'
 
 export default {
   name: 'SpeakerCard',
   components: {
-    TalkTitle,
+    SpeakerCardContent,
   },
   props: {
     image_path: {
@@ -59,9 +76,21 @@ export default {
       type: String,
       default: '',
     },
-    anchorName: {
+    anchor_name: {
       type: String,
       default: '',
+    },
+    allow_route_history: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    maybeRenderWithRouteHistory: function() {
+      return this.anchor_name != '' && this.allow_route_history
+    },
+    maybeRenderWithoutRouteHistory: function() {
+      return this.anchor_name != '' && !this.allow_route_history
     },
   },
   methods: {
@@ -73,7 +102,7 @@ export default {
       }
     },
     anchorPath: function() {
-      return '#' + this.anchorName
+      return 'speakers#' + this.anchor_name
     },
   },
 }

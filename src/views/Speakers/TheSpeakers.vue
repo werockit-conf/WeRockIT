@@ -8,7 +8,7 @@
         :image_path="person.image_path"
         :name="person.name"
         :talk_title="person.talkTitle"
-        :anchorName="person.anchorName"
+        :anchor_name="person.anchorName"
         :talk_tag="person.talkTag"
         :linkedin="person.linkedin"
         :website="person.website"
