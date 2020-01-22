@@ -20,6 +20,7 @@
       </div>
       <div class="py-20">
         <a
+          v-if="showTicketSales"
           href="https://www.tickettailor.com/events/werockitconf/268601"
           target="_blank"
           class="uppercase font-bold mt-4 font-montserrat inline p-2 px-6 bg-wri-teal rounded-full hover:bg-blue-300  lg:text-2xl md:text-xl sm:text-xl"
@@ -35,5 +36,10 @@ import Tile from '@/components/Tile.vue'
 
 export default {
   components: { Tile },
+  computed: {
+    showTicketSales() {
+      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
+    },
+  },
 }
 </script>
