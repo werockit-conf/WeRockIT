@@ -1,0 +1,40 @@
+<template>
+  <Tile bgcolor="bg-white" title="Keynotes" titleColor="text-wri-teal">
+    <div class="sm:flex md:flex-wrap justify-center">
+      <SpeakerCard
+        v-for="person in keynotes"
+        :key="person.id"
+        class="sm:w-1/3"
+        :image_path="person.image_path"
+        :name="person.name"
+        :talk_title="person.talkTitle"
+        :anchor_name="person.anchorName"
+        :allow_route_history="true"
+      />
+    </div>
+  </Tile>
+</template>
+
+<script>
+import { globalStore } from '@/components/store.js'
+import Tile from '@/components/Tile.vue'
+import SpeakerCard from '@/components/SpeakerCard.vue'
+import WeRockData from '@/components/werockdata.js'
+
+export default {
+  name: 'keynotes',
+  components: {
+    Tile,
+    SpeakerCard,
+  },
+  computed: {
+    keynotes: function() {
+      return globalStore.state.keynotes
+    },
+  },
+  mounted() {
+    let justKeynotes = true
+    WeRockData.speakers(justKeynotes)
+  },
+}
+</script>

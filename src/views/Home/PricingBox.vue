@@ -7,11 +7,6 @@
       <div>Keynotes</div>
       <div>All Track Sessions</div>
       <div>Workshops</div>
-      <div>Social Lounge</div>
-      <div>Mothers Room</div>
-      <div>Speed Mentorship</div>
-      <div>Quiet Room</div>
-      <div>Post Event Content</div>
       <div class="pb-3">Access</div>
       <a :href="link" class="bg-wri-dark-blue rounded-lg p-3">{{ button }}</a>
     </div>

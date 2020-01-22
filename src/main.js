@@ -5,10 +5,11 @@ import VueAnalytics from 'vue-analytics'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { globalStore } from '@/components/store.js'
 
-library.add(faTwitter, faInstagram, faLinkedin, faFacebook, faLink)
+library.add(faTwitter, faInstagram, faLinkedin, faFacebook, faLink, faCaretUp)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
@@ -26,5 +27,6 @@ Vue.use(VueAnalytics, {
 
 new Vue({
   router,
+  data: globalStore,
   render: h => h(App),
 }).$mount('#app')
