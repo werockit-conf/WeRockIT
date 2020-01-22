@@ -1,6 +1,6 @@
 <template>
   <Tile bgcolor="bg-white" title="" titleColor="text-wri-dark-blue">
-    <div v-for="level in levels" :key="level.name">
+    <div v-for="level in levels" :key="level.name" class="text-center">
       <SponsorLevel :level="level" />
     </div>
   </Tile>
