@@ -1,3 +1,5 @@
+import { globalStore } from '@/components/store.js'
+
 export default {
   base() {
     const apikey = process.env.VUE_APP_AIRTABLE_API_KEY
@@ -61,9 +63,133 @@ export default {
             console.error(err)
             return
           }
+          globalStore.state.team = team
         }
       )
+  },
 
-    return team
+  sponsors() {
+    let base = this.base()
+    let sponsors = {}
+
+    base('Sponsors')
+      .select({
+        view: 'Levels',
+      })
+      .eachPage(
+        function page(records, fetchNextPage) {
+          records.forEach(function(record) {
+            var id = record.get('Id')
+            var name = record.get('Name')
+            var level = record.get('SponsorshipLevel')
+            var website = record.get('Url')
+            var logoList = record.get('LogoImage')
+
+            var logoUrl = ''
+            if (logoList) {
+              var logo = logoList[0]
+
+              if (logo) {
+                logoUrl = logo.url
+              }
+            }
+            if (!sponsors[level]) {
+              sponsors[level] = []
+            }
+
+            sponsors[level].unshift({
+              id: id,
+              name: name,
+              image_path: logoUrl,
+              level: level,
+              website: website,
+            })
+          })
+
+          fetchNextPage()
+        },
+        function done(err) {
+          if (err) {
+            console.error(err)
+            return
+          }
+          globalStore.state.sponsors = sponsors
+        }
+      )
+  },
+  speakers(justKeynotes = false) {
+    let base = this.base()
+    let speakers = []
+    let view = 'DisplaySpeakers'
+
+    if (justKeynotes) {
+      view = 'Keynotes'
+    }
+
+    let that = this
+    that.justKeynotes = justKeynotes
+
+    base('Speakers')
+      .select({
+        view: view,
+      })
+      .eachPage(
+        function page(records, fetchNextPage) {
+          records.forEach(function(record) {
+            var id = record.get('Id')
+            var name = record.get('Name')
+            var headshotList = record.get('Headshot')
+            var talkTitle = record.get('TalkTitle')
+            var jobTitle = record.get('JobTitle')
+            var secondaryTitle = record.get('SecondaryTitle')
+            var companyName = record.get('CompanyName')
+            var linkedIn = record.get('LinkedIn')
+            var website = record.get('Website')
+            var twitter = record.get('Twitter')
+            var isKeynote = record.get('IsKeynote')
+            var talkTag = record.get('Tags')
+            var biography = record.get('Bio')
+
+            var headshotUrl = ''
+            if (headshotList) {
+              var headshot = headshotList[0]
+
+              if (headshot) {
+                headshotUrl = headshot.url
+              }
+            }
+
+            speakers.unshift({
+              id: id,
+              name: name,
+              image_path: headshotUrl,
+              job_title: jobTitle,
+              secondary_title: secondaryTitle,
+              company: companyName,
+              linkedin: linkedIn,
+              website: website,
+              twitter: twitter,
+              isKeynote: isKeynote,
+              talkTag: talkTag,
+              talkTitle: talkTitle,
+              biography: biography,
+              anchorName: name.replace(/\s/g, '').replace(/\./g, ''),
+            })
+          })
+
+          fetchNextPage()
+        },
+        function done(err) {
+          if (err) {
+            console.error(err)
+            return
+          }
+          if (that.justKeynotes) {
+            globalStore.state.keynotes = speakers
+          } else {
+            globalStore.state.speakers = speakers
+          }
+        }
+      )
   },
 }
