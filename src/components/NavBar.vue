@@ -1,16 +1,12 @@
 <template>
   <div :class="displayClasses" class="z-50">
-    <nav ref="logo" class="flex items-center justify-between flex-wrap">
+    <nav ref="logo" class="flex items-center justify-between flex-wrap lg:flex-no-wrap">
       <div class="mx-auto inline float-left">
         <NavBarLogo name="home">
-          <img
-            alt="WeRockIT Conference"
-            src="../assets/WeRockIT_logo.png"
-            class="h-20 sm:float-left lg:h-24 lg:mx-12 lg:my-8"
-          />
+          <img alt="WeRockIT Conference" :src="logoPath" class="h-16 sm:float-left lg:mx-12" />
         </NavBarLogo>
       </div>
-      <div class="block lg:hidden mx-auto my-8 inline">
+      <div class="block lg:hidden mx-auto my-4 inline">
         <button
           @click="toggle"
           class="border-wri-teal flex items-center px-3 py-2 rounded bg-wri-dark-purple text-wri-teal hover:text-black"
@@ -35,20 +31,14 @@
       <div :class="open ? 'block' : 'hidden'" class="w-full lg:w-auto order-first lg:order-last lg:block lg:flex-grow">
         <div
           :class="lgTextColor"
-          class="text-wri-teal px-24 py-8 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
+          class="text-wri-teal px-24 py-8 lg:py-5 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
         >
-          <NavBarLink name="home">About</NavBarLink>
+          <NavBarLink name="about" hash="#about">About</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
-          <!-- <NavBarLink name="speakers">Speakers</NavBarLink>
-          <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
+          <NavBarLink v-if="showSpeakerPage" name="speakers">Speakers</NavBarLink>
+          <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
           <NavBarLink name="sponsor">Sponsors</NavBarLink>
           <NavBarLink name="team">Team</NavBarLink>
-          <a
-            href="https://2019.werockitconf.com"
-            target="_blank"
-            class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
-            >Past Events</a
-          >
           <a
             v-if="showTicketSales"
             href="https://www.tickettailor.com/events/werockitconf/268601"
@@ -56,7 +46,6 @@
             class="uppercase block lg:inline-block py-2 mr-4 border-b lg:border-0 border-blue-200"
             >Tickets</a
           >
-          <!-- <NavBarLink name="WorkInProgress">Tickets</NavBarLink>-->
         </div>
       </div>
     </nav>
@@ -76,6 +65,7 @@ export default {
       textColor: 'text-white',
       fixedStyles: 'fixed top-0 left-0 right-0',
       stickyStyles: 'sticky top-0 left-0 right-0',
+      logoAsset: 'WeRockIT_white_logo.png',
     }
   },
   computed: {
@@ -89,6 +79,12 @@ export default {
     showTicketSales() {
       return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
     },
+    showSpeakerPage() {
+      return process.env.VUE_APP_UNLOCK_SPEAKERS == 'TRUE'
+    },
+    logoPath() {
+      return require('../assets/' + this.logoAsset)
+    },
   },
   methods: {
     toggle() {
@@ -98,6 +94,7 @@ export default {
       let scrolled = window.scrollY > this.navbarHeight
       this.bgcolor = scrolled ? 'bg-white' : 'bg-transparent'
       this.textColor = scrolled ? 'text-black' : 'text-white'
+      this.logoAsset = scrolled ? 'WeRockIT_black_logo.png' : 'WeRockIT_white_logo.png'
     },
   },
   watch: {
