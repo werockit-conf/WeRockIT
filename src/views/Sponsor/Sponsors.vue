@@ -8,8 +8,9 @@
 
 <script>
 import { globalStore } from '@/components/store.js'
+
 import Tile from '@/components/Tile.vue'
-import WeRockData from '@/components/werockdata.js'
+import WeRockDataCdn from '@/components/werockdataCdn.js'
 import SponsorLevel from './SponsorLevel.vue'
 
 export default {
@@ -37,7 +38,7 @@ export default {
     },
   },
   mounted() {
-    WeRockData.sponsors()
+    WeRockDataCdn.sponsors()
   },
 }
 </script>

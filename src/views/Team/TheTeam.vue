@@ -21,7 +21,7 @@
 import { globalStore } from '@/components/store.js'
 import Tile from '@/components/Tile.vue'
 import PersonCard from '@/components/PersonCard.vue'
-import WeRockData from '@/components/werockdata.js'
+import WeRockDataCdn from '@/components/werockdataCdn.js'
 
 export default {
   name: 'the-team',
@@ -46,7 +46,7 @@ export default {
     },
   },
   mounted() {
-    WeRockData.team()
+    WeRockDataCdn.team()
   },
 }
 </script>

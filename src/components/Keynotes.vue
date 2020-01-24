@@ -19,7 +19,7 @@
 import { globalStore } from '@/components/store.js'
 import Tile from '@/components/Tile.vue'
 import SpeakerCard from '@/components/SpeakerCard.vue'
-import WeRockData from '@/components/werockdata.js'
+import WeRockDataCdn from '@/components/werockdataCdn.js'
 
 export default {
   name: 'keynotes',
@@ -34,7 +34,7 @@ export default {
   },
   mounted() {
     let justKeynotes = true
-    WeRockData.speakers(justKeynotes)
+    WeRockDataCdn.speakers(justKeynotes)
   },
 }
 </script>
