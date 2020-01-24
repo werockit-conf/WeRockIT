@@ -24,7 +24,7 @@ import { globalStore } from '@/components/store.js'
 import SpeakersHeader from './Speakers/SpeakersHeader.vue'
 import TheSpeakers from './Speakers/TheSpeakers.vue'
 import Biographies from './Speakers/Biographies.vue'
-import WeRockData from '@/components/werockdata.js'
+import WeRockDataCdn from '@/components/werockdataCdn.js'
 
 export default {
   name: 'speakers',
@@ -64,7 +64,7 @@ export default {
     },
   },
   mounted() {
-    WeRockData.speakers()
+    WeRockDataCdn.speakers()
 
     window.addEventListener('scroll', this.updateScroll)
     this.biographyHeight = this.$refs.biographysection.$el.offsetTop
