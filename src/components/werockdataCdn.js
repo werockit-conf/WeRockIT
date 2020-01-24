@@ -15,7 +15,7 @@ export default {
   team() {
     let team = []
 
-    axios.get('https://werockdata.werockitconf.workers.dev/boardmembers').then(response => {
+    axios.get('https://werockdata.werockitconf.workers.dev/boardmembers').then(cresponse => {
       console.log(response)
       team = response.data.records.map(record => {
         var id = record.id
