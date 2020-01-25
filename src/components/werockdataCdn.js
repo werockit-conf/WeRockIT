@@ -16,7 +16,6 @@ export default {
     let team = []
 
     axios.get('https://werockdata.werockitconf.workers.dev/boardmembers').then(response => {
-      console.log(response)
       team = response.data.records.map(record => {
         var id = record.id
         var name = record.fields.Name
@@ -47,7 +46,6 @@ export default {
     let sponsors = []
 
     axios.get('https://werockdata.werockitconf.workers.dev/sponsors').then(response => {
-      console.log(response)
       sponsors = response.data.records.map(record => {
         var id = record.id
         var name = record.fields.Name
@@ -90,7 +88,6 @@ export default {
 
     axios.get(url).then(response => {
       speakers = response.data.records.map(record => {
-        console.log(record)
         var id = record.id
         var name = record.fields.Name
         var headshotList = record.fields.Headshot
