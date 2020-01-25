@@ -16,22 +16,21 @@
       Hi [NAME],
       <br />
       <br />
-      WeRockIT Conf 2019 is taking place at ADTRAN's Mark C. Smith Conference Center in Huntsville, AL, May 3-4,
-      2019, and I’m hoping to get your approval to go. This is an invaluable opportunity to gain practical insights
-      and hear success stories from technology professionals and executives who are facing challenges similar to
-      ours. This will be particularly beneficial for [PROJECT 1] and [PROJECT 2].
+      WeRockIT Conf 2020 is taking place at ADTRAN's Mark C. Smith Conference Center in Huntsville AL on May 26 - 27,
+      2020, and I’m hoping to get your approval to go. This is an invaluable opportunity to gain practical insights and
+      hear success stories from technology professionals and executives who are facing challenges similar to ours. This
+      will be particularly beneficial for [PROJECT 1] and [PROJECT 2].
       <br />
       <br />
-      Beyond that, there will be several opportunities to meet one on one with developers and technology
-      professionals from Huntsville and the surrounding areas, attend hands-on workshops, learn about the latest
-      trends in technology, and gain technical knowledge. I especially look forward to learning about [TOPICS
-      INTERESTED IN] – directly from some of the best and brightest in tech – and sharing these insights with our
-      team.
+      Beyond that, there will be several opportunities to meet one on one with developers and technology professionals
+      from Huntsville and the surrounding areas, attend hands-on workshops, learn about the latest trends in technology,
+      and gain technical knowledge. I especially look forward to learning about [TOPICS INTERESTED IN] – directly from
+      some of the best and brightest in tech – and sharing these insights with our team.
       <br />
       <br />
       I estimate that my attendance at this event will cost [$ HERE] – which includes travel, accommodations, and
-      registration. Let me know if you’re on board and we can work together to plan out pre-event and post-event
-      action items.
+      registration. Let me know if you’re on board and we can work together to plan out pre-event and post-event action
+      items.
       <br />
       <br />
       Looking forward to your thoughts,<br />
