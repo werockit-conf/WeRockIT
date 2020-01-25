@@ -31,7 +31,14 @@ export default {
         })
       }
 
-      return levelsets
+      return levelsets.sort(function(a, b) {
+        let value = {
+          Platinum: 1,
+          Diamond: 2,
+          Silver: 3,
+        }
+        return value[a.name] - value[b.name]
+      })
     },
     sponsors: function() {
       return globalStore.state.sponsors

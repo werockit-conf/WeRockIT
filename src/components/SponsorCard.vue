@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <img class="inline-block w-1/3" :src="imagePath()" :alt="logoName()" />
+    <img class="inline-block" :class="maxSponsorWidth" :src="imagePath()" :alt="logoName()" />
   </div>
 </template>
 
@@ -19,6 +19,20 @@ export default {
     website: {
       type: String,
       default: '',
+    },
+    level_name: {
+      type: String,
+      default: '',
+    },
+  },
+  computed: {
+    maxSponsorWidth: function() {
+      if (this.level_name == 'Platinum') {
+        return 'max-w-lg h-24'
+      } else if (this.level_name == 'Diamond') {
+        return 'max-w-xs h-20'
+      }
+      return 'max-w-md'
     },
   },
   methods: {
