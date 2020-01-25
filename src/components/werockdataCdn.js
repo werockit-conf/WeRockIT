@@ -2,6 +2,9 @@ import { globalStore } from '@/components/store.js'
 const axios = require('axios')
 
 export default {
+  buildImagePath(name) {
+    return 'images/speakers/' + name + '.jpg'
+  },
   getImageUrl(imageList) {
     if (imageList) {
       var image = imageList[0]
@@ -16,7 +19,6 @@ export default {
     let team = []
 
     axios.get('https://werockdata.werockitconf.workers.dev/boardmembers').then(response => {
-      console.log(response)
       team = response.data.records.map(record => {
         var id = record.id
         var name = record.fields.Name
@@ -47,7 +49,6 @@ export default {
     let sponsors = []
 
     axios.get('https://werockdata.werockitconf.workers.dev/sponsors').then(response => {
-      console.log(response)
       sponsors = response.data.records.map(record => {
         var id = record.id
         var name = record.fields.Name
@@ -90,10 +91,8 @@ export default {
 
     axios.get(url).then(response => {
       speakers = response.data.records.map(record => {
-        console.log(record)
         var id = record.id
         var name = record.fields.Name
-        var headshotList = record.fields.Headshot
         var talkTitle = record.fields.TalkTitle
         var jobTitle = record.fields.JobTitle
         var secondaryTitle = record.fields.SecondaryTitle
@@ -105,12 +104,12 @@ export default {
         var talkTag = record.fields.Tags
         var biography = record.fields.Bio
 
-        let headshotUrl = this.getImageUrl(headshotList)
+        var anchorName = name.replace(/\s/g, '').replace(/\./g, '')
 
         return {
           id: id,
           name: name,
-          image_path: headshotUrl,
+          image_path: this.buildImagePath(anchorName),
           job_title: jobTitle,
           secondary_title: secondaryTitle,
           company: companyName,
@@ -121,7 +120,7 @@ export default {
           talkTag: talkTag,
           talkTitle: talkTitle,
           biography: biography,
-          anchorName: name.replace(/\s/g, '').replace(/\./g, ''),
+          anchorName: anchorName,
         }
       })
 
