@@ -77,6 +77,25 @@ export default {
       })
 
       globalStore.state.sponsors = consolidate
+
+      let levelsets = []
+      let keys = Object.keys(globalStore.state.sponsors)
+
+      for (const key of keys) {
+        levelsets.push({
+          name: key,
+          sponsors: globalStore.state.sponsors[key],
+        })
+      }
+
+      globalStore.state.sponsorsByLevels = levelsets.sort(function(a, b) {
+        let value = {
+          Platinum: 1,
+          Diamond: 2,
+          Silver: 3,
+        }
+        return value[a.name] - value[b.name]
+      })
     })
   },
   speakers(justKeynotes = false) {
