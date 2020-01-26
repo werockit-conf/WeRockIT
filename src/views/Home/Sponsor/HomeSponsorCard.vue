@@ -29,11 +29,11 @@ export default {
     maxSponsorWidth: function() {
       console.log(this.level_name)
       if (this.level_name == 'Platinum') {
-        return ''
+        return 'mx-auto h-24 md:h-20'
       } else if (this.level_name == 'Diamond') {
-        return 'h-16'
+        return 'mx-auto h-16 pt-2'
       }
-      return ''
+      return 'mx-auto'
     },
   },
   methods: {

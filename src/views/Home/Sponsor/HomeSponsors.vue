@@ -1,7 +1,7 @@
 <template>
   <Tile bgcolor="bg-white" title="Sponsors" titleColor="text-wri-dark-blue">
-    <div class="container content-center">
-      <HomeSponsorLevel v-for="level in levels" :key="level.name" class="" :level="level" />
+    <div class="container md:flex md:justify-center max-w-full">
+      <HomeSponsorLevel v-for="level in levels" :key="level.name" class="md:mx-auto md:w-1/3" :level="level" />
     </div>
   </Tile>
 </template>
