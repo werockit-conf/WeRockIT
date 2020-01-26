@@ -112,6 +112,7 @@ export default {
       speakers = response.data.records.map(record => {
         var id = record.id
         var name = record.fields.Name
+        var headshotList = record.fields.Headshot
         var talkTitle = record.fields.TalkTitle
         var jobTitle = record.fields.JobTitle
         var secondaryTitle = record.fields.SecondaryTitle
@@ -125,10 +126,12 @@ export default {
 
         var anchorName = name.replace(/\s/g, '').replace(/\./g, '')
 
+        var headshotUrl = this.getImageUrl(headshotList)
+
         return {
           id: id,
           name: name,
-          image_path: this.buildImagePath(anchorName),
+          image_path: headshotUrl,
           job_title: jobTitle,
           secondary_title: secondaryTitle,
           company: companyName,
