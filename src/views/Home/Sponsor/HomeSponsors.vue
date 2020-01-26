@@ -1,7 +1,7 @@
 <template>
-  <Tile bgcolor="bg-white" title="" titleColor="text-wri-dark-blue">
-    <div v-for="level in levels" :key="level.name" class="text-center">
-      <SponsorLevel :level="level" />
+  <Tile bgcolor="bg-white" title="Sponsors" titleColor="text-wri-dark-blue">
+    <div class="container content-center">
+      <HomeSponsorLevel v-for="level in levels" :key="level.name" class="" :level="level" />
     </div>
   </Tile>
 </template>
@@ -11,26 +11,16 @@ import { globalStore } from '@/components/store.js'
 
 import Tile from '@/components/Tile.vue'
 import WeRockDataCdn from '@/components/werockdataCdn.js'
-import SponsorLevel from './SponsorLevel.vue'
+import HomeSponsorLevel from './HomeSponsorLevel.vue'
 
 export default {
   name: 'sponsors',
   components: {
+    HomeSponsorLevel,
     Tile,
-    SponsorLevel,
   },
   computed: {
     levels: function() {
-      let levelsets = []
-      let keys = Object.keys(this.sponsors)
-
-      for (const key of keys) {
-        levelsets.push({
-          name: key,
-          sponsors: this.sponsors[key],
-        })
-      }
-
       return globalStore.state.sponsorsByLevels
     },
     sponsors: function() {
