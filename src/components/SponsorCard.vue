@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <img class="inline-block" :class="maxSponsorWidth" :src="imagePath()" :alt="logoName()" />
+    <img class="inline-block" :class="sponsorStyle" :src="imagePath()" :alt="logoName()" />
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
     },
   },
   computed: {
-    maxSponsorWidth: function() {
+    sponsorStyle: function() {
       if (this.level_name == 'Platinum') {
         return 'max-w-lg h-24'
       } else if (this.level_name == 'Diamond') {

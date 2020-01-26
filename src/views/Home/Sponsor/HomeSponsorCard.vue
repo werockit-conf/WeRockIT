@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <img :class="maxSponsorWidth" :src="imagePath()" :alt="logoName()" />
+    <img :class="sponsorStyle" :src="imagePath()" :alt="logoName()" />
   </div>
 </template>
 
@@ -26,8 +26,7 @@ export default {
     },
   },
   computed: {
-    maxSponsorWidth: function() {
-      console.log(this.level_name)
+    sponsorStyle: function() {
       if (this.level_name == 'Platinum') {
         return 'mx-auto h-24 md:h-20'
       } else if (this.level_name == 'Diamond') {
