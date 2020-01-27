@@ -16,6 +16,14 @@
       />
     </div>
     <span class="text-3xl text-wri-teal pt-5 font-semibold"><center>Check back for more to come!</center></span>
+    <div class="my-4 md:inline lg:inline">
+      <a
+        href="./WeRockIT2020Speakers.pdf"
+        target="_blank"
+        class="p-3 m-3 text-wri-purple hover:text-wri-blue font-bebas text-xl"
+        >Trouble seeing speakers? Download a PDF of all speakers, talks, and bios currently listed.</a
+      >
+    </div>
   </Tile>
 </template>
 
