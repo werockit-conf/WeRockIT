@@ -2,7 +2,7 @@
   <div class="text-white text-center content-center bg-wri-purple py-5">
     <div class="uppercase font-bebas text-4xl text-white">Justify Your Trip</div>
     <div class="font-montserratt text-base text-wri-white px-5 md:px-16 lg:px-64">
-      Want to attend WeRock IT Conf 2019, but your manager needs a little convincing? We've put together a letter you
+      Want to attend WeRock IT Conf 2020, but your manager needs a little convincing? We've put together a letter you
       can use to explain the benefits and ask for support. Just fill in the blanks and personalize it.
     </div>
     <div class="justify-center pt-5">
