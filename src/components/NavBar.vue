@@ -37,7 +37,7 @@
           <NavBarLink name="travel">Travel</NavBarLink>
           <NavBarLink v-if="showSpeakerPage" name="speakers">Speakers</NavBarLink>
           <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->
-          <NavBarLink name="sponsor">Sponsors</NavBarLink>
+          <NavBarLink name="sponsors">Sponsors</NavBarLink>
           <NavBarLink name="team">Team</NavBarLink>
           <a
             v-if="showTicketSales"
