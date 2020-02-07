@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    <img :class="sponsorStyle" :src="imagePath()" :alt="logoName()" />
+    <a :href="website">
+      <img :class="sponsorStyle" :src="imagePath()" :alt="logoName()" />
+    </a>
   </div>
 </template>
 
