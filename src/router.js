@@ -41,8 +41,13 @@ export default new Router({
       component: CodeOfConduct,
     },
     {
+      path: '/sponsors',
+      name: 'sponsors',
+      component: Sponsor,
+    },
+    {
       path: '/sponsor',
-      name: 'sponsor',
+      name: 'sponsors',
       component: Sponsor,
     },
     {
