@@ -7,6 +7,7 @@
       :image_path="sponsor.image_path"
       :name="sponsor.name"
       :level_name="level.name"
+      :website="sponsor.website"
     />
   </div>
 </template>
