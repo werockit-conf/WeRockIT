@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <img class="inline-block" :class="sponsorStyle" :src="imagePath()" :alt="logoName()" />
+    <a :href="website">
+      <img class="inline-block" :class="sponsorStyle" :src="imagePath()" :alt="logoName()" />
+    </a>
   </div>
 </template>
 
