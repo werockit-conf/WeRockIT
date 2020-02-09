@@ -6,7 +6,7 @@
     <Keynotes v-if="showSpeakerPage"></Keynotes>
     <Pricing></Pricing>
     <Updates></Updates>
-    <Videos></Videos>
+    <TruthVideo></TruthVideo>
     <HomeSponsors></HomeSponsors>
   </div>
 </template>
@@ -18,7 +18,7 @@ import MissionStatement from './Home/MissionStatement.vue'
 import Pricing from './Home/Pricing.vue'
 import TrackTopics from './Home/TrackTopics.vue'
 import Updates from './Home/Updates.vue'
-import Videos from './Home/Videos.vue'
+import TruthVideo from '@/components/TruthVideo.vue'
 import Keynotes from '@/components/Keynotes.vue'
 
 export default {
@@ -30,7 +30,7 @@ export default {
     Pricing,
     TrackTopics,
     Updates,
-    Videos,
+    TruthVideo,
   },
   computed: {
     showSpeakerPage() {

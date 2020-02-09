@@ -17,6 +17,15 @@
           </SquareImageBlock>
         </div>
       </div>
+      <div class="py-20">
+        <a
+          v-if="showTicketSales"
+          href="https://www.tickettailor.com/events/werockitconf/268601"
+          target="_blank"
+          class="uppercase font-bold mt-4 font-montserrat inline p-2 px-6 bg-wri-teal rounded-full hover:bg-blue-300  lg:text-2xl md:text-xl sm:text-xl"
+          >Get Tickets</a
+        >
+      </div>
     </center>
   </tile>
 </template>
@@ -38,13 +47,13 @@ export default {
           id: 1,
           image_path: 'images/attend/social_level.jpg',
           header: 'Social Level',
-          content: 'Establish your level of preferred social interaction with color coded lanyards',
+          content: 'Establish your level of preferred social interaction with color coded lanyards.',
         },
         {
           id: 2,
           image_path: 'images/attend/workshops.jpg',
           header: 'Workshops',
-          content: 'Learn a new skill. WeRockIT will offer beginner to intermediate level workshops',
+          content: 'Learn a new skill. WeRockIT will offer beginner to intermediate level workshops.',
         },
         {
           id: 3,
@@ -57,7 +66,7 @@ export default {
           id: 5,
           image_path: 'images/attend/mothers_room.jpg',
           header: 'Lactation Room',
-          content: 'A private lacation room equipped with a refrigerator will be available throughout the event',
+          content: 'A private lacation room equipped with a refrigerator will be available throughout the event.',
         },
         {
           id: 6,
@@ -76,11 +85,8 @@ export default {
     }
   },
   computed: {
-    firstHalf: function() {
-      return this.amenities.slice(0, 3)
-    },
-    secondHalf: function() {
-      return this.amenities.slice(3, 6)
+    showTicketSales() {
+      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
     },
   },
 }
