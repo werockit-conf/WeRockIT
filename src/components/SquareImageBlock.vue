@@ -1,5 +1,9 @@
 <template>
-  <div @mouseover="hover = true" @mouseleave="hover = false" class="relative box flex-grow text-white">
+  <div
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    class="relative apply m-4 p-3 text-center text-white box-size"
+  >
     <div class="z-0 absolute darken top-0 left-0">
       <img
         v-if="this.hover_enabled"
@@ -8,10 +12,10 @@
         :src="imagePath()"
         alt="image"
       />
-      <img v-else class="object-cover h-64" :src="imagePath()" alt="image" />
+      <img v-else class="object-cover" :src="imagePath()" alt="image" />
     </div>
     <div class="relative z-20 pt-3 mt-5">
-      <div class="font-roboto-slab text-xl font-semibold ">
+      <div class="font-bebas text-4xl tracking-wide font-semibold leading-none">
         {{ header }}
       </div>
       <slot></slot>
@@ -28,13 +32,9 @@ img {
   filter: brightness(0.6);
 }
 
-.box {
-  @apply inline-block;
+.box-size {
   @apply w-64;
-  @apply m-4;
-  @apply p-3;
-  @apply text-center;
-  @apply bg-black;
+  @apply h-64;
 }
 </style>
 

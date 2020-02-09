@@ -6,17 +6,17 @@
         target_url="https://www.hyatt.com/en-US/hotel/alabama/hyatt-place-huntsville-research-park/hsvzh"
         header="Hyatt Place"
       >
-        <p>Speakers</p>
+        <p>6860 Governors West NW<br />Huntsville, AL 35806</p>
       </SquareImageBlockLink>
       <SquareImageBlockLink
-        image_path="westin.jpeg"
+        image_path="images/hotels/westin.jpeg"
         target_url="https://www.marriott.com/hotels/travel/hsvwi-the-westin-huntsville/?program=spg"
         header="The Westin at Bridge Street"
       >
-        <p>6800 Governors West<br />Huntsville, AL 35806</p>
+        <p>6810 Governors West<br />Huntsville, AL 35806</p>
       </SquareImageBlockLink>
       <SquareImageBlockLink
-        image_path="element.jpg"
+        image_path="images/hotels/element.jpg"
         target_url="http://www.elementhuntsville.com/"
         header="The Element at Bridge Street"
       >
