@@ -73,7 +73,7 @@ export default {
           image_path: 'images/attend/speed_mentorship.jpg',
           header: 'Speed Mentorship',
           content:
-            'Pair off with several experienced professionals to gain insight, advice, and knowledge. Preregistration required.',
+            'Pair with experienced professionals to gain insight and knowledge. Preregistration required.',
         },
         {
           id: 7,
