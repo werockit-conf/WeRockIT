@@ -35,7 +35,7 @@ export default {
       type: String,
       required: true,
     },
-    ytembedlink: {
+    youtube_embed_url: {
       type: String,
       required: true,
     },
