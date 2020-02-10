@@ -4,17 +4,17 @@
       <iframe
         width="720"
         height="405"
-        :src="ytembedlink"
+        :src="youtube_embed_url"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
     </div>
     <div class="text-3xl text-white font-bebas pt-4">
-      {{ vtitle }}
+      {{ video_title }}
     </div>
     <div class="text-lg text-white">
-      {{ vdesc }}
+      {{ video_description }}
     </div>
     <div class="py-20">
       <a
@@ -35,15 +35,15 @@ export default {
       type: String,
       required: true,
     },
-    ytembedlink: {
+    youtube_embed_url: {
       type: String,
       required: true,
     },
-    vtitle: {
+    video_title: {
       type: String,
       required: true,
     },
-    vdesc: {
+    video_description: {
       type: String,
       required: true,
     },
