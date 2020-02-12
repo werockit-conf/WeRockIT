@@ -7,7 +7,7 @@
       video_description="We talk with Branden Schwartz, WeRockIT 2019 speaker and Scenic City Summit organizer, about what he thinks
         makes WeRockIT Conf unique."
     ></Vidya>
-    
+
     <Vidya
       anchor="lanyards"
       youtube_embed_url="https://www.youtube.com/embed/K60dEz2uCso"
