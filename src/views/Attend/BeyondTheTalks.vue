@@ -4,7 +4,7 @@
       <div class="max-w-4xl">
         <div class="justify-center flex flex-wrap">
           <SquareImageBlock
-            v-for="ammenity in this.amenities"
+            v-for="ammenity in amenities"
             class="w-1/3"
             :key="ammenity.id"
             :image_path="ammenity.image_path"

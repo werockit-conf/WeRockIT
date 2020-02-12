@@ -5,13 +5,7 @@
     class="relative apply m-4 p-3 text-center text-white box-size"
   >
     <div class="z-0 absolute darken top-0 left-0">
-      <img
-        v-if="this.hover_enabled"
-        class="object-cover h-64"
-        :class="{ lighter: hover }"
-        :src="imagePath()"
-        alt="image"
-      />
+      <img v-if="hover_enabled" class="object-cover h-64" :class="{ lighter: hover }" :src="imagePath()" alt="image" />
       <img v-else class="object-cover" :src="imagePath()" alt="image" />
     </div>
     <div class="relative z-20 pt-3 mt-5">
