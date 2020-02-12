@@ -16,7 +16,7 @@
       Hi [NAME],
       <br />
       <br />
-      WeRockIT Conf 2020 is taking place at ADTRAN's Mark C. Smith Conference Center in Huntsville AL on May 26 - 27,
+      WeRockIT Conf 2020 is taking place at ADTRAN's Mark C. Smith Conference Center in Huntsville AL on March 26 - 27,
       2020, and I’m hoping to get your approval to go. This is an invaluable opportunity to gain practical insights and
       hear success stories from technology professionals and executives who are facing challenges similar to ours. This
       will be particularly beneficial for [PROJECT 1] and [PROJECT 2].
