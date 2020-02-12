@@ -1,14 +1,19 @@
 <template>
-  <div @mouseover="hover = true" @mouseleave="hover = false" class="relative box text-white">
-    <a :href="target_url" target="_blank">
-      <div class="z-0 absolute darken top-0 left-0">
-        <img class="object-cover h-64" :class="{ lighter: hover }" :src="imagePath()" alt="image" />
+  <div
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    class="relative apply m-4 p-3 text-center text-white box-size"
+  >
+    <div class="z-0 absolute darken top-0 left-0">
+      <img v-if="hover_enabled" class="object-cover h-64" :class="{ lighter: hover }" :src="imagePath()" alt="image" />
+      <img v-else class="object-cover" :src="imagePath()" alt="image" />
+    </div>
+    <div class="relative z-20 pt-3 mt-5">
+      <div class="font-bebas text-4xl tracking-wide font-semibold leading-none">
+        {{ header }}
       </div>
-      <div class="relative z-20 pt-5 mt-5">
-        <div class="font-roboto-slab text-xl font-semibold">{{ header }}</div>
-        <p class="font-montserrat text-base pt-10" v-html="subtitle"></p>
-      </div>
-    </a>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -21,21 +26,29 @@ img {
   filter: brightness(0.6);
 }
 
-.box {
-  @apply inline-block;
-  @apply h-64;
+.box-size {
   @apply w-64;
-  @apply m-4;
-  @apply p-3;
-  @apply text-center;
-  @apply bg-black;
+  @apply h-64;
 }
 </style>
 
 <script>
 export default {
   name: 'SquareImageBlock',
-  props: ['image_path', 'target_url', 'header', 'subtitle'],
+  props: {
+    image_path: {
+      type: String,
+      required: true,
+    },
+    header: {
+      type: String,
+      default: ' ',
+    },
+    hover_enabled: {
+      type: Boolean,
+      default: true,
+    },
+  },
   data: function() {
     return {
       hover: false,

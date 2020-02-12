@@ -34,6 +34,7 @@
           class="text-wri-teal px-24 py-8 lg:py-5 sm:bg-wri-dark-purple lg:bg-transparent lg:flex lg:justify-around lg:text-xl font-medium font-montserrat"
         >
           <NavBarLink name="about" hash="#about">About</NavBarLink>
+          <NavBarLink name="attend">Attend</NavBarLink>
           <NavBarLink name="travel">Travel</NavBarLink>
           <NavBarLink v-if="showSpeakerPage" name="speakers">Speakers</NavBarLink>
           <!-- <NavBarLink name="WorkInProgress">Schedule</NavBarLink>-->

@@ -13,9 +13,9 @@
         <h3 class="pt-5">Accessibility</h3>
         <p>
           The main entrance to the Mark C. Smith Conference Center has several sets of stairs between the first floor
-          where registration is to the second floor that makes the main entrance to the conference area not as accessible.
-          A lower-barrier entrance is also available. For attendees who would prefer that option, escort volunteers
-          will be staffed at the main entrance.
+          where registration is to the second floor that makes the main entrance to the conference area not as
+          accessible. A lower-barrier entrance is also available. For attendees who would prefer that option, escort
+          volunteers will be staffed at the main entrance.
         </p>
       </div>
     </div>

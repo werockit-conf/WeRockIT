@@ -48,5 +48,10 @@ export default {
       required: true,
     },
   },
+  computed: {
+    showTicketSales() {
+      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
+    },
+  },
 }
 </script>
