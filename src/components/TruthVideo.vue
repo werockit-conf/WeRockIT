@@ -24,10 +24,5 @@ import Vidya from '@/components/Vidya.vue'
 
 export default {
   components: { Tile, Vidya },
-  computed: {
-    showTicketSales() {
-      return process.env.VUE_APP_UNLOCK_TICKET_SALES == 'TRUE'
-    },
-  },
 }
 </script>

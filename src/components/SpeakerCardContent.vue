@@ -1,6 +1,6 @@
 <template>
   <div class="p-5 text-center max-w-sm">
-    <img class="rounded-full shadow-lg mb-5" :src="imagePath()" alt="image" />
+    <img class="rounded-full shadow-lg hover:shadow-2xl mb-5" :src="imagePath()" alt="image" />
     <div class="font-bold text-md">{{ name }}</div>
     <TalkTitle v-if="talk_title != ''" :talk_tag="this.talk_tag">
       {{ talk_title }}
