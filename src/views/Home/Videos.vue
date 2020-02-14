@@ -15,6 +15,13 @@
       video_description="What are lanyard colors at a conference and why do they matter? Pat Viafore, a speaker from WeRockIT Conf 2019,
         chats with WeRockIT about why this unique conference feature is more than it seems."
     ></Vidya>
+
+    <Vidya
+      anchor="social-room"
+      youtube_embed_url="https://www.youtube.com/embed/cmxHL7obhvg"
+      video_title="How to Connect in the Social Room at WeRockIT 2020"
+      video_description="What is a conference social room and how can it help you network? We talk to Nina Antonison, owner of local business Fiber Artwork, about her time teaching people to knit at the WeRockIT 2019 social room - and the surprising things she noticed."
+    ></Vidya>
   </Tile>
 </template>
 
