@@ -9,9 +9,13 @@
         <ul>
           <li>
             <a href="http://www.flyhuntsville.com/hsv/airport-information/ground-transportation/#.XT-1qZNKjUI">
-              Ground Transportation through Huntsville International Airport</a
-            >
-            <p class="font-thin">Rental cars available through Avis, Hertz, Enterprise, and more.</p>
+              Ground Transportation through Huntsville International Airport
+            </a>
+            <br />
+            <span class="font-thin text-base"> Rental cars available through Avis, Hertz, Enterprise, and more.</span>
+          </li>
+          <li>
+            <a href="https://www.avis.com/en/locations/us/al/huntsville/hsv"> Avis Car Rental - Huntsville</a>
           </li>
         </ul>
         <h3>Rideshare</h3>
