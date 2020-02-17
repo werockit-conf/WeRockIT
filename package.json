@@ -23,7 +23,7 @@
     "vue": "^2.6.10",
     "vue-analytics": "^5.17.2",
     "vue-router": "^3.0.3",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
