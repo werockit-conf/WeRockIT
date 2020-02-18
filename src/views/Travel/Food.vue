@@ -14,9 +14,6 @@
             </p>
           </li>
           <li>
-            <a target="_blank" href="http://bluepantsbrew.com/">Blue Pants Brewery and Taproom </a>
-          </li>
-          <li>
             <a target="_blank" href="http://thebottledowntown.com/the-bottle/">The Bottle </a>
             <p>
               The Bottle, an upscale eatery that features Southern Cuisine with a French influence, specializes in
