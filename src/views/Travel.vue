@@ -60,15 +60,13 @@ export default {
   @apply font-thin;
 }
 
-::v-deep ul {
-  @apply text-2xl;
-  @apply font-extrabold;
-  @apply list-none;
-}
-
 ::v-deep li {
   @apply text-xl;
-  @apply pb-4;
+  @apply pb-1;
+}
+
+::v-deep a:hover {
+  @apply text-wri-purple;
 }
 
 iframe,

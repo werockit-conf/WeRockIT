@@ -3,6 +3,9 @@ const axios = require('axios')
 
 export default {
   buildImagePath(name) {
+    if (0 == name.length) {
+      return 'placeholder.png'
+    }
     return 'images/speakers/' + name + '.jpg'
   },
   getImageUrl(imageList) {
@@ -123,7 +126,10 @@ export default {
         var talkTag = record.fields.Tags
         var biography = record.fields.Bio
 
-        var anchorName = name.replace(/\s/g, '').replace(/\./g, '')
+        var anchorName = ''
+        if (typeof name !== 'undefined') {
+          anchorName = name.replace(/\s/g, '').replace(/\./g, '')
+        }
 
         return {
           id: id,
