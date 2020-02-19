@@ -2,20 +2,20 @@
   <div>
     <AttendHeader></AttendHeader>
     <BeyondTheTalks></BeyondTheTalks>
-    <TruthVideo></TruthVideo>
+    <Videos></Videos>
   </div>
 </template>
 
 <script>
 import AttendHeader from './Attend/AttendHeader.vue'
 import BeyondTheTalks from './Attend/BeyondTheTalks.vue'
-import TruthVideo from '@/components/TruthVideo.vue'
+import Videos from '@/components/Videos.vue'
 
 export default {
   components: {
     AttendHeader,
     BeyondTheTalks,
-    TruthVideo,
+    Videos,
   },
 }
 </script>
