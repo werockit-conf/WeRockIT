@@ -1,10 +1,11 @@
 <template>
-  <div class="text-wri-blue">
+  <div class="text-wri-blue" id="printMe">
     <SpeakersHeader></SpeakersHeader>
+    <button @click="print"></button>
     <TheSpeakers :speakers="this.speakers" id="top"></TheSpeakers>
     <Biographies ref="biographysection" :speakers="this.speakers"></Biographies>
     <button v-on:click="backToTop" :class="showButtonStyle" class="floaty-button">
-      <font-awesome-icon class="m-5 flex-grow text-6xl text-wri-teal" :icon="['fa', 'caret-up']"></font-awesome-icon>
+      <font-awesome-icon class="m-5 flex-grow text-base text-wri-teal" :icon="['fa', 'caret-up']"></font-awesome-icon>
     </button>
   </div>
 </template>
@@ -62,6 +63,9 @@ export default {
     backToTop: function() {
       this.$router.replace('speakers#top')
     },
+    print: function() {
+      this.$htmlToPaper('printMe')
+    }
   },
   mounted() {
     WeRockDataCdn.speakers()

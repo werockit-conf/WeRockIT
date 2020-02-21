@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueAnalytics from 'vue-analytics'
+import VueHtmlToPaper from 'vue-html-to-paper';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
@@ -24,6 +25,20 @@ Vue.use(VueAnalytics, {
     sendHitTask: isProd,
   },
 })
+
+const printOptions = {
+  name: '_blank',
+  specs: [
+    'fullscreen=yes',
+    'titlebar=yes',
+    'scrollbars=yes'
+  ],
+  styles: [
+    'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css'
+  ]
+}
+
+Vue.use(VueHtmlToPaper, printOptions)
 
 new Vue({
   router,
