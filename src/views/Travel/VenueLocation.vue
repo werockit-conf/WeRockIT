@@ -13,7 +13,7 @@
       <div class="md:w-1/2 md:ml-6 md:max-w-xl">
         <h3>ADTRAN East Tower</h3>
         <p>ADTRAN Mark C. Smith Conference Center</p>
-        <p>ADTRAN East Tower, 965 Explorer Blvd NW, Huntsville, AL 35806</p>
+        <p>ADTRAN East Tower, 901 Explorer Blvd NW, Huntsville, AL 35806</p>
         <p class="pt-5">
           Located in the heart of Cummings Research Park and I-565 exit 14. The ADTRAN Mark C. Smith Conference Center
           resides in ADTRAN's East Tower.

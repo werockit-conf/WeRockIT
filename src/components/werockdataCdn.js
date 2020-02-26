@@ -95,7 +95,9 @@ export default {
         let value = {
           Platinum: 1,
           Diamond: 2,
-          Silver: 3,
+          Gold: 3,
+          Silver: 4,
+          Bronze: 5,
         }
         return value[a.name] - value[b.name]
       })
