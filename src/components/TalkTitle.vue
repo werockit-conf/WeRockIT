@@ -20,6 +20,8 @@ export default {
         return 'bg-teal-200'
       } else if (this.talk_tag == 'data science') {
         return 'bg-purple-200'
+      } else if (this.talk_tag == 'panelist') {
+        return 'bg-indigo-200'
       }
 
       return 'bg-transparent'
