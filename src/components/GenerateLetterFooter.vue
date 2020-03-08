@@ -8,8 +8,8 @@
     <div class="justify-center pt-5">
       <button v-on:click="this.toggle" class="bg-wri-dark-purple rounded-full hover:bg-blue-300 p-2">
         Generate Letter
-        <font-awesome-icon v-if="!active" class="" :icon="['fa', 'caret-down']"></font-awesome-icon>
-        <font-awesome-icon v-else class="" :icon="['fa', 'caret-up']"></font-awesome-icon>
+        <font-awesome-icon v-if="!active" :icon="['fa', 'caret-down']"></font-awesome-icon>
+        <font-awesome-icon v-else :icon="['fa', 'caret-up']"></font-awesome-icon>
       </button>
     </div>
     <div v-show="active" class="text-left bg-wri-dark-purple rounded-sm p-4 md:px-20 mt-4">
