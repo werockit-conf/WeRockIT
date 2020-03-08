@@ -10,7 +10,7 @@
           <h2 class="uppercase text-3xl">DevOps | Development</h2>
           <h2 class="uppercase leading-none text-3xl">Data Science | IOT</h2>
         </div>
-        <h3 class="uppercase text-5xl lg:text-6xl">March 26-27 2020</h3>
+        <h3 class="uppercase text-5xl lg:text-6xl">Early November 2020</h3>
         <h3 class="uppercase leading-none text-5xl lg:text-6xl">Huntsville, AL</h3>
       </div>
     </div>
