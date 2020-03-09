@@ -10,7 +10,7 @@
           <h2 class="uppercase text-3xl">DevOps | Development</h2>
           <h2 class="uppercase leading-none text-3xl">Data Science | IOT</h2>
         </div>
-        <h3 class="uppercase text-5xl lg:text-6xl">March 26-27 2020</h3>
+        <h3 class="uppercase text-5xl lg:text-6xl">Early November 2020</h3>
         <h3 class="uppercase leading-none text-5xl lg:text-6xl">Huntsville, AL</h3>
       </div>
     </div>
@@ -18,7 +18,7 @@
       <a
         href="https://www.tickettailor.com/events/werockitconf/268601"
         target="_blank"
-        class="uppercase font-bold mt-4 font-montserrat inline p-2 px-6 bg-wri-teal rounded-full hover:bg-blue-300  lg:text-3xl md:text-3xl sm:text-2xl"
+        class="uppercase font-bold mt-4 font-montserrat inline p-2 px-6 bg-wri-teal rounded-full hover:bg-blue-300 lg:text-3xl md:text-3xl sm:text-2xl"
         >Get Tickets</a
       >
     </div>

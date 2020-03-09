@@ -8,18 +8,18 @@
     <div class="justify-center pt-5">
       <button v-on:click="this.toggle" class="bg-wri-dark-purple rounded-full hover:bg-blue-300 p-2">
         Generate Letter
-        <font-awesome-icon v-if="!active" class="" :icon="['fa', 'caret-down']"></font-awesome-icon>
-        <font-awesome-icon v-else class="" :icon="['fa', 'caret-up']"></font-awesome-icon>
+        <font-awesome-icon v-if="!active" :icon="['fa', 'caret-down']"></font-awesome-icon>
+        <font-awesome-icon v-else :icon="['fa', 'caret-up']"></font-awesome-icon>
       </button>
     </div>
     <div v-show="active" class="text-left bg-wri-dark-purple rounded-sm p-4 md:px-20 mt-4">
       Hi [NAME],
       <br />
       <br />
-      WeRockIT Conf 2020 is taking place at ADTRAN's Mark C. Smith Conference Center in Huntsville AL on March 26 - 27,
-      2020, and I’m hoping to get your approval to go. This is an invaluable opportunity to gain practical insights and
-      hear success stories from technology professionals and executives who are facing challenges similar to ours. This
-      will be particularly beneficial for [PROJECT 1] and [PROJECT 2].
+      WeRockIT Conf 2020 is taking place at ADTRAN's Mark C. Smith Conference Center in Huntsville AL in early November
+      of this year , and I’m hoping to get your approval to go. This is an invaluable opportunity to gain practical
+      insights and hear success stories from technology professionals and executives who are facing challenges similar
+      to ours. This will be particularly beneficial for [PROJECT 1] and [PROJECT 2].
       <br />
       <br />
       Beyond that, there will be several opportunities to meet one on one with developers and technology professionals
