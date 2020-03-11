@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import WorkInProgress from './views/WorkInProgress.vue'
 import Attend from './views/Attend.vue'
 import CodeOfConduct from './views/CodeOfConduct.vue'
+import Covid19Update from './views/Covid19.vue'
 import Home from './views/Home.vue'
 import Speakers from './views/Speakers.vue'
 import Sponsor from './views/Sponsor.vue'
@@ -20,6 +21,11 @@ export default new Router({
       path: '/wip',
       name: 'WorkInProgress',
       component: WorkInProgress,
+    },
+    {
+      path: '/covid19-update',
+      name: 'Covid19Update',
+      component: Covid19Update,
     },
     {
       path: '/',
