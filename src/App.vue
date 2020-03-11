@@ -9,7 +9,7 @@
       </div>
     </Banner>
     <router-view />
-    <GenerateLetterFooter></GenerateLetterFooter>
+    <!-- <GenerateLetterFooter></GenerateLetterFooter> -->
     <Footer></Footer>
   </div>
 </template>
@@ -20,7 +20,7 @@ import Banner from '@/components/Banner.vue'
 import NavBar from '@/components/NavBar.vue'
 import NavBarLink from '@/components/NavBarLink.vue'
 import Footer from '@/components/Footer.vue'
-import GenerateLetterFooter from '@/components/GenerateLetterFooter.vue'
+// import GenerateLetterFooter from '@/components/GenerateLetterFooter.vue'
 
 export default {
   components: {
@@ -28,7 +28,7 @@ export default {
     NavBarLink,
     Banner,
     Footer,
-    GenerateLetterFooter,
+    // GenerateLetterFooter,
   },
 }
 </script>
